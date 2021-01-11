@@ -1,4 +1,4 @@
-.experience {
+.education {
   .heading {
     position: absolute;
     font-size: 10rem;
@@ -6,7 +6,7 @@
     transform: rotate(-90deg) translate(-55%, -150%);
   }
 
-  .experienceList {
+  .educationList {
     height: 100vh;
     margin-left: 15vw;
     padding: 10vh 0;
@@ -28,19 +28,20 @@
         margin: 5px 0;
       }
 
+      span {
+        font-size: 1.5rem;
+        margin-left: 5px;
+      }
+
       p {
         font-size: 2rem;
         margin: 5px 0;
       }
 
-
-      ul {
-      margin-top: 10px;
-        li {
-          margin: 5px 0;
-          font-size: 1.5rem;
-        }
+      .marks {
+        font-size: 1.5rem;
       }
     }
+
   }
 }
