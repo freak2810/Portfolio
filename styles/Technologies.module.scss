@@ -25,14 +25,14 @@
       align-items: center;
 
       img {
-        filter: grayscale(100%);
+        //filter: grayscale(100%);
         transition: filter .3s ease-in-out;
 
         height: 75px;
         width: 75px;
 
         &:hover {
-          filter: grayscale(0);
+          filter: grayscale(0%);
         }
       }
 

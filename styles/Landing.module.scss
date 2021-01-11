@@ -21,12 +21,8 @@
     margin-top: 50px;
 
     img {
-      filter: grayscale(100%);
       transition: filter .3s ease-in-out;
 
-      &:hover {
-        filter: grayscale(0%);
-      }
     }
   }
 }
