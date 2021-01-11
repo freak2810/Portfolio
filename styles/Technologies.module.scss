@@ -1,0 +1,48 @@
+.technologies {
+  position: relative;
+
+  .heading {
+    position: absolute;
+    font-size: 10rem;
+    color: #00000010;
+    transform: rotate(-90deg) translate( -50%,-200%);
+  }
+
+  .technologyList {
+    height: 100vh;
+    margin-left: 15vw;
+    padding:10vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    div {
+
+      margin: 10px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .image {
+        filter: grayscale(100%);
+        transition: filter .3s ease-in-out;
+        height: 75px;
+        width: 75px;
+
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 10px;
+      }
+
+    }
+
+    }
+
+
+}

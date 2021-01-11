@@ -1,0 +1,17 @@
+.landingPage {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  h1 {
+    font-size: 10rem;
+    font-family: 'Sacramento', cursive;
+    position: sticky;
+  }
+
+  h2 {
+    font-size: 5rem;
+    position: sticky;
+  }
+}
