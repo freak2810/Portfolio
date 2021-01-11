@@ -1,9 +1,13 @@
 .experience {
+  position: relative;
+
   .heading {
     position: absolute;
     font-size: 10rem;
     color: #00000010;
-    transform: rotate(-90deg) translate(-55%, -150%);
+    transform: rotate(-90deg) translate(50%, -150%) ;
+    bottom:0;
+    left:0
   }
 
   .experienceList {

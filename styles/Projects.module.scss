@@ -1,26 +1,25 @@
-.education {
-
+.projects {
   position: relative;
 
   .heading {
     position: absolute;
     font-size: 10rem;
     color: #00000010;
-    transform: rotate(-90deg) translate(50%, -150%) ;
+    transform: rotate(-90deg) translate(50%, -100%) ;
     bottom:0;
     left:0
   }
 
-  .educationList {
+  .projectList {
     height: 100vh;
     margin-left: 15vw;
     padding: 10vh 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-direction: column;
     align-items: center;
 
-    .place {
+    .project {
       width: 40%;
 
       h1 {
@@ -28,25 +27,31 @@
         margin: 5px 0;
       }
 
-      h3 {
-        font-size: 2.5rem;
-        margin: 5px 0;
-      }
+     .tags {
 
-      span {
-        font-size: 1.5rem;
-        margin-left: 5px;
-      }
+       margin: 20px 0;
+       span {
+         border: 1px dotted grey;
+         font-size: 1.2rem;
+         padding: 5px;
+         margin: 0 10px 0 0;
+         border-radius: 15px;
+       }
+     }
 
       p {
         font-size: 2rem;
         margin: 5px 0;
       }
 
-      .marks {
-        font-size: 1.5rem;
+
+      ul {
+        margin-top: 10px;
+        li {
+          margin: 5px 0;
+          font-size: 1.5rem;
+        }
       }
     }
-
   }
 }
