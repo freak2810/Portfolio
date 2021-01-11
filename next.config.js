@@ -5,7 +5,7 @@ module.exports = withSass({
     cssModules: true,
     sassLoaderOptions: {
         // Resolving SASS absolute imports
-        includePaths: [path.resolve(__dirname, 'src')],
+        includePaths: [path.resolve(__dirname, 'public')],
     },
     cssLoaderOptions: {
         localIdentName: '[hash:base64]',
