@@ -82,12 +82,5 @@ export default function TechnologiesList() {
                 </div>
             )
         }
-        {/*<Image*/}
-        {/*    src="/Technologies/javascript.svg"*/}
-        {/*    alt="Javascript"*/}
-        {/*    width={50}*/}
-        {/*    height={50}*/}
-        {/*    className={styles.image}*/}
-        {/*/>*/}
     </div>
 }

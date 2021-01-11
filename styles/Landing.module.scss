@@ -14,4 +14,19 @@
     font-size: 5rem;
     position: sticky;
   }
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+    img {
+      filter: grayscale(100%);
+      transition: filter .3s ease-in-out;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
 }

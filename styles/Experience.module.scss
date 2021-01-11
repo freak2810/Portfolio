@@ -1,0 +1,48 @@
+.experience {
+
+
+  .heading {
+    position: absolute;
+    font-size: 10rem;
+    color: #00000010;
+    transform: rotate(-90deg) translate(-55%, -150%);
+  }
+
+  .experienceList {
+    height: 100vh;
+    margin-left: 15vw;
+    padding: 10vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    .place {
+      width: 40%;
+
+      h1 {
+        font-size: 3rem;
+        margin: 5px 0;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        margin: 5px 0;
+      }
+
+      p {
+        font-size: 2rem;
+        margin: 5px 0;
+      }
+
+
+      ul {
+      margin-top: 10px;
+        li {
+          margin: 5px 0;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
