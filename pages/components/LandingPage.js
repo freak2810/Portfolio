@@ -1,5 +1,4 @@
 import styles from "../../styles/Landing.module.scss"
-import Image from "next/image";
 
 const height = 40;
 const width = 40;
@@ -7,31 +6,31 @@ const width = 40;
 export default function LandingPage() {
     const SocialLinks = () => {
         return <div className={styles.links}>
-            <Image
+            <img
                 src="/Social/gmail.svg"
                 alt="Gmail Link"
                 width={width}
                 height={height}
             />
-            <Image
+            <img
                 src="/Social/linkedin.svg"
                 alt="LinkedIn Link"
                 width={width}
                 height={height}
             />
-            <Image
+            <img
                 src="/Social/twitter.svg"
                 alt="Twitter Link"
                 width={width}
                 height={height}
             />
-            <Image
+            <img
                 src="/Social/discord.svg"
                 alt="Discord Link"
                 width={width}
                 height={height}
             />
-            <Image
+            <img
                 src="/Social/instagram.svg"
                 alt="Instagram Link"
                 width={width}

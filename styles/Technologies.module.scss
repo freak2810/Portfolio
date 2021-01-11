@@ -11,6 +11,7 @@
   .technologyList {
     height: 100vh;
     margin-left: 15vw;
+    margin-right: 10vw;
     padding:10vh 0;
     display: flex;
     flex-wrap: wrap;
@@ -23,9 +24,10 @@
       flex-direction: column;
       align-items: center;
 
-      .image {
+      img {
         filter: grayscale(100%);
         transition: filter .3s ease-in-out;
+
         height: 75px;
         width: 75px;
 
