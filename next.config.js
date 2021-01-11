@@ -3,9 +3,9 @@ const path = require('path');
 
 module.exports = withSass({
     cssModules: true,
-    sassLoaderOptions: {
+    sassOptions: {
         // Resolving SASS absolute imports
-        includePaths: [path.resolve(__dirname, 'public')],
+        includePaths: [path.resolve(__dirname, 'styles')],
     },
     cssLoaderOptions: {
         localIdentName: '[hash:base64]',
