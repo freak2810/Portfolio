@@ -58,7 +58,7 @@ export default function LandingPage() {
     }
 
     return <section className={styles.landingPage}>
-        <h1>Aditya
+        <h1>Aditya{' '}
             <wbr/>
             Manikanth Rao
         </h1>
