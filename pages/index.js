@@ -8,8 +8,8 @@ export default function Home() {
     return <main>
         <LandingPage/>
         <Technologies/>
-        <ExperiencePage/>
-        <EducationPage/>
-        <ProjectsPage/>
+        {/*<ExperiencePage/>*/}
+        {/*<EducationPage/>*/}
+        {/*<ProjectsPage/>*/}
     </main>
 }

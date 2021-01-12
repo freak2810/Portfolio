@@ -5,14 +5,14 @@
     position: absolute;
     font-size: 10rem;
     color: #00000010;
-    transform: rotate(-90deg) translate( -50%,-200%);
+    transform: rotate(-90deg) translate(-50%, -200%);
   }
 
   .technologyList {
     height: 100vh;
     margin-left: 15vw;
     margin-right: 10vw;
-    padding:10vh 0;
+    padding: 10vh 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -43,8 +43,34 @@
       }
 
     }
+  }
+}
 
+
+@media only screen and (max-width: 480px) {
+  .technologies {
+    margin-left: 0;
+    margin-right: 0;
+
+    .heading {
+      font-size: 10rem;
+      color: #00000010;
+      transform: rotate(-90deg) translate(-70%, -220%);
     }
 
+    .technologyList {
+      height: auto;
+      margin: 0 5vw 0 15vw;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-evenly;
 
+      div {
+        img {
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
 }

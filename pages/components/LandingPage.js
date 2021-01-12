@@ -46,11 +46,22 @@ export default function LandingPage() {
                     height={height}
                 />
             </a>
+            <a href="https://github.com/AdityaManikanth2810" target='blank'>
+                <img
+                    src="/Social/github.svg"
+                    alt="Github Link"
+                    width={width}
+                    height={height}
+                />
+            </a>
         </div>
     }
 
     return <section className={styles.landingPage}>
-        <h1>Aditya Manikanth Rao</h1>
+        <h1>Aditya
+            <wbr/>
+            Manikanth Rao
+        </h1>
         <h2>Full Stack Developer</h2>
         <SocialLinks/>
     </section>
