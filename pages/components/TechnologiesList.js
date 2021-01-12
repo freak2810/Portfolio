@@ -1,4 +1,8 @@
+import Image from 'next/image'
 import styles from "../../styles/Technologies.module.scss";
+
+const height =  30;
+const width = 30;
 
 const technologies = [
     {
@@ -71,9 +75,12 @@ export default function TechnologiesList() {
     return <div className={styles.technologyList}>
         {
             technologies.map(tech => <div>
-                    <img
+                    <Image
                         src={tech.src}
                         alt={tech.alt}
+                        height={height}
+                        width={width}
+                        className={styles.image}
                     />
                     <p>{tech.alt}</p>
                 </div>

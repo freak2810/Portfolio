@@ -7,31 +7,41 @@ const width = 40;
 export default function LandingPage() {
     const SocialLinks = () => {
         return <div className={styles.links}>
-            <a href="mailto:adityamanikanthrao@gmail.com" target='blank'>
+            <a href="mailto:adityamanikanthrao@gmail.com"
+               aria-roledescription='Link'
+               title="adityamanikanthrao@gmail.com"
+               target='blank'>
                 <Image
                     src="/Social/gmail.svg"
-                    alt="Gmail Link"
+                    alt="adityamanikanthrao@gmail.com"
                     width={width}
                     height={height}
                 />
             </a>
-            <a href="https://github.com/AdityaManikanth2810" target='blank'>
+            <a href="https://github.com/AdityaManikanth2810"
+               aria-roledescription='Link'
+               title="AdityaManikanth2810"
+               target='blank'>
                 <Image
                     src="/Social/github.svg"
-                    alt="Github Link"
+                    alt="AdityaManikanth2810"
                     width={width}
                     height={height}
                 />
             </a>
-            <a href="https://www.linkedin.com/in/aditya-manikanth-rao-11874819a/" target='blank'>
+            <a href="https://www.linkedin.com/in/aditya-manikanth-rao-11874819a/"
+               title="Aditya Manikanth Rao"
+               target='blank'>
                 <Image
                     src="/Social/linkedin.svg"
-                    alt="LinkedIn Link"
+                    alt="Aditya Manikanth Rao"
                     width={width}
                     height={height}
                 />
             </a>
-            <a href="https://twitter.com/rao_manikanth" target='blank'>
+            <a href="https://twitter.com/rao_manikanth"
+               title="@rao_manikanth"
+               target='blank'>
                 <Image
                     src="/Social/twitter.svg"
                     alt="@rao_manikanth"
@@ -39,18 +49,22 @@ export default function LandingPage() {
                     height={height}
                 />
             </a>
-            <a href="https://discord.gg/QGZVNsJZ" target='blank'>
+            <a href="https://discord.gg/QGZVNsJZ"
+               title="freak2810#9756"
+               target='blank'>
                 <Image
                     src="/Social/discord.svg"
-                    alt="Discord Link"
+                    alt="freak2810#9756"
                     width={width}
                     height={height}
                 />
             </a>
-            <a href="https://www.instagram.com/aditya_theawsm1/" target='blank'>
+            <a href="https://www.instagram.com/aditya_theawsm1/"
+               title="aditya_theawsm1"
+               target='blank'>
                 <Image
                     src="/Social/instagram.svg"
-                    alt="Instagram Link"
+                    alt="aditya_theawsm1"
                     width={width}
                     height={height}
                 />
