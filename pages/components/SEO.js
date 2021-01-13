@@ -3,8 +3,12 @@ import Head from 'next/head'
 export default function SEO() {
     return <Head>
 
+        <meta charSet="UTF-8"/>
+        <meta httpEquiv="content-language" content="en"/>
+
         <title>Aditya's Portfolio</title>
         <meta name="title" content="Aditya's Portfolio"/>
+        <meta name="author" content="Aditya Manikanth Rao"/>
         <meta name="description"
               content="Hi! I am Aditya Manikanth Rao. I am a final year CS Undergraduate and a Full Stack Developer from Warangal, India. Check out my portfolio and other profiles to know more or contact me."/>
 
