@@ -10,8 +10,8 @@ export default function Home() {
         <SEO/>
         <LandingPage/>
         <TechnologiesPage/>
-        {/*<ExperiencePage/>*/}
-        {/*<EducationPage/>*/}
-        {/*<ProjectsPage/>*/}
+        <ExperiencePage/>
+        <EducationPage/>
+        <ProjectsPage/>
     </main>
 }
