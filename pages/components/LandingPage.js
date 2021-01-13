@@ -73,11 +73,8 @@ export default function LandingPage() {
         </div>
     }
 
-    return <section className={styles.landingPage}>
-        <h1>Aditya{' '}
-            <wbr/>
-            Manikanth Rao
-        </h1>
+    return <section className={styles.container}>
+        <h1>Aditya Manikanth Rao</h1>
         <h2>Full Stack Developer</h2>
         <SocialLinks/>
     </section>

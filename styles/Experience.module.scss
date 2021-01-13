@@ -1,13 +1,17 @@
+@import "mixins/container";
+
 .experience {
   position: relative;
+  @include container;
 
   .heading {
     position: absolute;
     font-size: 10rem;
+    bottom: 0;
+    left: 0;
+    transform-origin: 0 0;
+    transform: translate(0,0) rotate(-90deg);
     color: #00000010;
-    transform: rotate(-90deg) translate(50%, -150%) ;
-    bottom:0;
-    left:0
   }
 
   .experienceList {

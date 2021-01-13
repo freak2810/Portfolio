@@ -1,5 +1,5 @@
 import LandingPage from "./components/LandingPage";
-import Technologies from "./components/TechnologiesPage";
+import TechnologiesPage from "./components/TechnologiesPage";
 import ExperiencePage from "./components/ExperiencePage";
 import EducationPage from "./components/EducationPage";
 import ProjectsPage from "./components/ProjectsPage";
@@ -9,9 +9,9 @@ export default function Home() {
     return <main>
         <SEO/>
         <LandingPage/>
-        <Technologies/>
-        <ExperiencePage/>
-        <EducationPage/>
-        <ProjectsPage/>
+        <TechnologiesPage/>
+        {/*<ExperiencePage/>*/}
+        {/*<EducationPage/>*/}
+        {/*<ProjectsPage/>*/}
     </main>
 }

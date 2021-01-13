@@ -1,7 +1,8 @@
-.landingPage {
-  display: grid;
-  justify-content: center;
-  align-content: center;
+@import "mixins/container";
+
+.container {
+  @include container;
+  @include centerGrid;
   text-align: center;
 
   h1 {
@@ -12,13 +13,12 @@
 
   h2 {
     font-size: 5rem;
-    position: sticky;
   }
 
   .links {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 5rem;
 
     img {
       transition: filter .3s ease-in-out;
@@ -27,11 +27,9 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .landingPage {
-    height: 100vh;
-    width: 100vw;
-    //background-color: aqua;
 
+  .container {
+    @include containerMobile;
     img {
       height: 30px;
       width: 30px;

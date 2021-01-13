@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from "../../styles/Technologies.module.scss";
 
-const height =  30;
-const width = 30;
+const height =  40;
+const width = 40;
 
 const technologies = [
     {
@@ -44,10 +44,6 @@ const technologies = [
     {
         src:'/Technologies/git.svg',
         alt:'Git'
-    },
-    {
-        src:'/Technologies/github.svg',
-        alt:'GitHub'
     },
     {
         src:'/Technologies/mysql.svg',

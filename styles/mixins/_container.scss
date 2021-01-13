@@ -1,0 +1,60 @@
+@mixin container {
+  box-sizing: border-box;
+  padding: 0 10vw;
+}
+
+@mixin containerMobile {
+  @include container;
+  padding: 0;
+}
+
+@mixin centerGrid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+@mixin contentContainer {
+  //background-color: grey;
+  min-height: 100vh;
+}
+
+@mixin contentContainerMobile {
+  @include contentContainer;
+  box-sizing: border-box;
+  //background-color: darkblue;
+}
+
+@mixin headings {
+  position: absolute;
+  font-size: 13vh;
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: translate(0,50%) rotate(-90deg);
+  color: #00000010;
+}
+
+@mixin headingsMobile {
+  font-size: 7vh;
+  //background-color: red;
+}
+
+@mixin list {
+  display: grid;
+  padding: 0 10vw;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-row-gap: 10rem;
+  align-content: center;
+}
+
+@mixin listMobile {
+  grid-template-columns: auto auto auto;
+  //background-color: palevioletred;
+  grid-row-gap: 5vh;
+  grid-column-gap: 10vw;
+  justify-content: center;
+  padding:0 20px;
+}
+
+

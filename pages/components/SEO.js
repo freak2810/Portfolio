@@ -5,6 +5,7 @@ export default function SEO() {
 
         <meta charSet="UTF-8"/>
         <meta httpEquiv="content-language" content="en"/>
+        <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon"/>
 
         <title>Aditya's Portfolio</title>
         <meta name="title" content="Aditya's Portfolio"/>
