@@ -1,27 +1,24 @@
-.education {
+@import "mixins/container";
 
+.education {
   position: relative;
+  @include container;
 
   .heading {
-    position: absolute;
-    font-size: 10rem;
-    color: #00000010;
-    transform: rotate(-90deg) translate(50%, -150%) ;
-    bottom:0;
-    left:0
+    @include headings;
   }
+
 
   .educationList {
     height: 100vh;
-    margin-left: 15vw;
-    padding: 10vh 0;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    //background-color: palevioletred;
 
     .place {
-      width: 40%;
+      width:60%;
 
       h1 {
         font-size: 3rem;
@@ -48,5 +45,24 @@
       }
     }
 
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .education {
+    .heading {
+      @include headingsMobile;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .education {
+    @include containerMobile;
+  }
+
+  .educationList {
+    margin-left: 10vw;
   }
 }

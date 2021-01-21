@@ -4,8 +4,8 @@ import EducationList from "./EducationList";
 
 export default function EducationPage() {
     return <section className={styles.education}>
-        <div>
-            <h1 className={styles.heading}>Education</h1>
+        <div className={styles.heading}>
+            Education
         </div>
         <EducationList/>
     </section>
