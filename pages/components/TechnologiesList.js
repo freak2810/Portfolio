@@ -70,7 +70,7 @@ const technologies = [
 export default function TechnologiesList() {
     return <div className={styles.technologyList}>
         {
-            technologies.map(tech => <div>
+            technologies.map((tech,index) => <div key={index}>
                     <Image
                         src={tech.src}
                         alt={tech.alt}

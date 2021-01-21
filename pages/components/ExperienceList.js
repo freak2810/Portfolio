@@ -20,6 +20,26 @@ const experience = [
             'Front End Development using TypeScript, React Native & GraphQL',
             'Built Reusable Components'
         ]
+    },
+    {
+        role: 'Web Development Intern',
+        company: 'InCampus Ltd.',
+        type:'Internship',
+        duration: '06/2020 - 08/2020 (2 months)',
+        tasks: [
+            'Front End Development using JavaScript and React',
+            'Worked on a blog using CSS and HTML'
+        ]
+    },
+    {
+        role: 'Junior Software Developer',
+        company: 'MockTheta, Inc.',
+        type:'Internship',
+        duration: '08/2019 - 07/2020 (1 year)',
+        tasks: [
+            'Front End Development using TypeScript, React Native & GraphQL',
+            'Built Reusable Components'
+        ]
     }
 ]
 

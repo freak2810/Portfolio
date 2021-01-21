@@ -11,7 +11,7 @@ export default function Home() {
         <LandingPage/>
         <TechnologiesPage/>
         <ExperiencePage/>
-        <EducationPage/>
-        <ProjectsPage/>
+        {/*<EducationPage/>*/}
+        {/*<ProjectsPage/>*/}
     </main>
 }

@@ -5,26 +5,21 @@
   @include container;
 
   .heading {
-    position: absolute;
-    font-size: 10rem;
-    bottom: 0;
-    left: 0;
-    transform-origin: 0 0;
-    transform: translate(0,0) rotate(-90deg);
-    color: #00000010;
+    @include headings;
   }
 
   .experienceList {
+    //background-color: palevioletred;
     height: 100vh;
-    margin-left: 15vw;
-    padding: 10vh 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    //margin-left: 15vw;
+    //padding: 10vh 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
     align-items: center;
 
     .place {
-      width: 40%;
+
 
       h1 {
         font-size: 3rem;
@@ -43,7 +38,8 @@
 
 
       ul {
-      margin-top: 10px;
+        margin-top: 10px;
+
         li {
           margin: 5px 0;
           font-size: 1.5rem;
@@ -52,3 +48,29 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 1025px) {
+  .experience {
+    .heading {
+      @include headingsMobile;
+    }
+
+    .experienceList {
+      grid-template-columns: auto;
+      //background-color: palevioletred;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .experience {
+    @include containerMobile;
+  }
+
+  .experienceList {
+    margin-left: 10vw;
+  }
+}
+

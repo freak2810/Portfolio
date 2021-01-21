@@ -10,7 +10,11 @@
 
   .technologyList {
     @include contentContainer;
-    @include list;
+    display: grid;
+    padding: 0 10vw;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-row-gap: 10rem;
+    align-content: center;
     align-items: center;
 
     div {
@@ -53,10 +57,14 @@
   .technologies {
     @include containerMobile;
 
-
     .technologyList {
       @include contentContainerMobile;
-      @include listMobile;
+      grid-template-columns: auto auto auto;
+      //background-color: palevioletred;
+      grid-row-gap: 5vh;
+      grid-column-gap: 10vw;
+      justify-content: center;
+      padding:0 20px;
 
       div {
         .image {

@@ -4,8 +4,8 @@ import ExperienceList from "./ExperienceList";
 
 export default function ExperiencePage() {
     return <section className={styles.experience}>
-        <div>
-            <h1 className={styles.heading}>Experience</h1>
+        <div className={styles.heading}>
+            Experience
         </div>
         <ExperienceList/>
     </section>
