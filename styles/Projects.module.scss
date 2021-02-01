@@ -1,57 +1,119 @@
+@import "mixins/container";
+
 .projects {
   position: relative;
+  @include container;
 
   .heading {
-    position: absolute;
-    font-size: 10rem;
-    color: #00000010;
-    transform: rotate(-90deg) translate(50%, -100%) ;
-    bottom:0;
-    left:0
+    @include headings;
   }
 
   .projectList {
-    height: 100vh;
-    margin-left: 15vw;
-    padding: 10vh 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
 
     .project {
-      width: 40%;
+      width: 40vw;
 
       h1 {
         font-size: 3rem;
         margin: 5px 0;
       }
 
-     .tags {
+      .tags {
+        margin: 20px 0;
 
-       margin: 20px 0;
-       span {
-         border: 1px dotted grey;
-         font-size: 1.2rem;
-         padding: 5px;
-         margin: 0 10px 0 0;
-         border-radius: 15px;
-       }
-     }
+        span {
+          border: 1px dotted grey;
+          font-size: 1.2rem;
+          padding: 5px;
+          margin: 0 10px 0 0;
+          border-radius: 15px;
+        }
+      }
 
       p {
         font-size: 2rem;
         margin: 5px 0;
       }
 
+      .links {
 
-      ul {
-        margin-top: 10px;
-        li {
-          margin: 5px 0;
-          font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+        //background-color: blue;
+
+        .eachIcon {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          transition: .6s all;
+
+          &:hover {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+          }
+        }
+
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin: 10px 0 10px 0;
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .projects {
+    .heading {
+      @include headingsMobile;
+    }
+
+    .projectList {
+      grid-template-columns: auto;
+      justify-content: center;
+      align-items: center;
+      //background-color: deeppink;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .projects {
+    @include containerMobile;
+
+    .projectList {
+      .project {
+        width: 60vw;
+        //background-color: deeppink;
+
+        //.links {
+        //  .eachIcon {
+        //    height: 10px !important;
+        //    width: 10px;
+        //  }
+        //}
+
+        .tags {
+          margin: 10px 0;
+          display: flex;
+          flex-wrap: wrap;
+          span {
+            border: 1px dotted grey;
+            font-size: 1.2rem;
+            padding: 3px;
+            margin: 3px 3px 0 0;
+            border-radius: 15px;
+          }
         }
       }
+
     }
   }
 }

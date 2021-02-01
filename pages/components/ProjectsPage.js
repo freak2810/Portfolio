@@ -4,8 +4,8 @@ import ProjectList from "./ProjectList";
 
 export default function ProjectsPage() {
     return <section className={styles.projects}>
-        <div>
-            <h1 className={styles.heading}>Projects</h1>
+        <div className={styles.heading}>
+            Projects
         </div>
         <ProjectList/>
     </section>

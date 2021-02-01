@@ -1,24 +1,23 @@
 import styles from "../../styles/Projects.module.scss";
+import Image from "next/image";
 
 const projects = [
     {
         name: 'ACM MVSR Website',
         link: 'https://github.com/AdityaManikanth2810/ACM-Main-Page',
+        site: 'https://mvsr.acm.org/',
         tags: [
             'javascript',
-            'react',
-            'nextjs',
+            'reactjs',
+            'sanity.io',
+            'css'
         ],
-        highlights: [
-            'Designed and developed a website using JavaScript & React.js',
-            'Created a Content Management System (Headless CMS) using\n Sanity.io',
-            'Made performance improvements like lazy load and image optimization.',
-            'Used various GitHub tools to ensure the quality and performance'
-        ]
+        description: 'A Front End application build in JavaScript and React for ACM MVSR Student Chapter. This application uses Sanity.io as a headless CMS.'
     },
     {
         name: 'E - Commerce Application',
         link: 'https://github.com/AdityaManikanth2810/NodeJS',
+        site:'https://node-js-git.herokuapp.com/',
         tags: [
             'javascript',
             'html',
@@ -28,32 +27,73 @@ const projects = [
             'expressjs',
             'mongodb'
         ],
-        highlights: [
-            'Developed a backend application using NodeJS, ExpressJS and MongoDB',
-            'User can authenticate and add products and view the products',
-            'User can place the order which redirects to a dummy gateway created by StripeJS',
-            'Build the views using HTML and EJS Templating Engine'
-        ]
+        description:'A NodeJS E-Commerce application which does all the basic crud operations along with authentication and authorization.'
+    },
+    {
+        name:'Story Books Application',
+        link:'https://github.com/AdityaManikanth2810/Story-Books',
+        tags:[
+            'javascript',
+            'html',
+            'css',
+            'handlebars',
+            'nodejs',
+            'expressjs',
+            'mongodb',
+            'passportjs'
+        ],
+        description: `A NodeJS Application which allows user to write stories, view other's stories, edit or delete a story. The application also uses passport to enable google authentication.`
     }
+
+
 ]
 
 export default function EducationList() {
     return <div className={styles.projectList}>
         {
-            projects.map(project => <div className={styles.project}>
-                <a href={project.link}>
-                    <h1>{project.name}</h1>
-                </a>
+            projects.map((project, index) => <div key={index} className={styles.project}>
+                <h1>{project.name}</h1>
                 <div className={styles.tags}>
                     {
                         project.tags.map(tag => <span>{tag}</span>)
                     }
                 </div>
-                <ul>
+                <p>{project.description}</p>
+                <div className={styles.links}>
                     {
-                        project.highlights.map(element => <li>{element}</li>)
+                        !project.link ? null :
+                        <a href={project.link}
+                           aria-roledescription='Link'
+                           title="GitHub Repo"
+                           target='blank'
+                        >
+                            <Image
+                                className={styles.eachIcon}
+                                src="/Links/github.svg"
+                                alt="GitHub Link"
+                                width={30}
+                                height={30}
+                            />
+                        </a>
                     }
-                </ul>
+                    {
+                        !project.site ? null :
+                        <a href={project.site}
+                           aria-roledescription='Link'
+                           title="Host Link"
+                           target='blank'
+                        >
+                            <Image
+                                className={styles.eachIcon}
+                                src="/Links/web.svg"
+                                alt="Website Link"
+                                width={30}
+                                height={30}
+                            />
+                        </a>
+                    }
+                </div>
+
             </div>)
         }
     </div>

@@ -12,6 +12,6 @@ export default function Home() {
         <TechnologiesPage/>
         <ExperiencePage/>
         <EducationPage/>
-        {/*<ProjectsPage/>*/}
+        <ProjectsPage/>
     </main>
 }
