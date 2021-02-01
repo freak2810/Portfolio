@@ -13,9 +13,11 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    justify-content: space-around;
 
     .project {
-      width: 40vw;
+      width: 30vw;
+      //background-color: deeppink;
 
       h1 {
         font-size: 3rem;
@@ -23,13 +25,15 @@
       }
 
       .tags {
-        margin: 20px 0;
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
 
         span {
           border: 1px dotted grey;
           font-size: 1.2rem;
           padding: 5px;
-          margin: 0 10px 0 0;
+          margin: 10px 10px 0 0;
           border-radius: 15px;
         }
       }
