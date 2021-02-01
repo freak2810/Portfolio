@@ -49,7 +49,7 @@ export default function LandingPage() {
                     height={height}
                 />
             </a>
-            <a href="https://discord.gg/QGZVNsJZ"
+            <a href="https://discord.gg"
                title="freak2810#9756"
                target='blank'>
                 <Image
