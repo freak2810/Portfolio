@@ -1,0 +1,65 @@
+@import "mixins/container";
+
+.about {
+  position: relative;
+  @include container;
+
+  .heading {
+    @include headings;
+  }
+
+  .details {
+    //background-color: deeppink;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 10%;
+
+    .image {
+      border-radius: 50%;
+      transition: .3s all;
+
+      &:hover {
+        border-radius: 20%;
+      }
+    }
+
+    h2 {
+      font-size: 5rem;
+      font-family: 'Sacramento', cursive;
+    }
+
+    p {
+        font-size: 2rem;
+        //background-color: deeppink;
+        width: 100%;
+        line-height: 1.5;
+
+      .name {
+        color: #1f4287;
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: 'Sacramento', cursive;
+        text-decoration-line: blink;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1025px) {
+  .about {
+    .heading {
+      @include headingsMobile;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .about {
+    @include containerMobile;
+  }
+}
