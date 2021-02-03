@@ -20,6 +20,8 @@
     .image {
       border-radius: 50%;
       transition: .3s all;
+      height: 300px;
+      width: 300px;
 
       &:hover {
         border-radius: 20%;
@@ -35,7 +37,7 @@
         font-size: 2rem;
         //background-color: deeppink;
         width: 100%;
-        line-height: 1.5;
+        line-height: 1.4;
 
       .name {
         color: #1f4287;
@@ -54,6 +56,24 @@
     .heading {
       @include headingsMobile;
     }
+
+    .details {
+      width: 100%;
+      //background-color: palevioletred;
+      margin: 0;
+      flex-direction: column-reverse;
+
+      .image {
+        height: 400px;
+        width: 400px;
+      }
+
+      p {
+        margin-top: 50px;
+        //background-color: palevioletred;
+        width: 70%;
+      }
+    }
   }
 }
 
@@ -61,5 +81,16 @@
 @media only screen and (max-width: 480px) {
   .about {
     @include containerMobile;
+
+    .details {
+      .image {
+        height: 200px;
+        width: 200px;
+      }
+
+      p {
+        margin-top: 20px;
+      }
+    }
   }
 }

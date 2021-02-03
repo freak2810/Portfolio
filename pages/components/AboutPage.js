@@ -13,14 +13,12 @@ export default function AboutPage() {
                 I am from <b>Warangal</b>.<br/>
                 I am a <b>Computer Science Undergraduate</b>.<br/>
                 A fan of The Game Of Thrones, Big Bang Theory and How I Met your Mother.<br/>
-                Love listening to Music and a big fan of Arijit Singh.
+                I love listening to Music and a big fan of Arijit Singh.
             </p>
-            <Image
+            <img
                 className={styles.image}
                 src="/mypic.jpeg"
                 alt="Aditya Manikanth Rao"
-                width={700}
-                height={700}
             />
         </div>
     </section>
