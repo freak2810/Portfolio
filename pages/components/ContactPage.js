@@ -3,8 +3,6 @@ import contactStyles from "../../styles/Contact.module.scss";
 import { useState } from "react";
 
 async function sendEmail(name, from, message) {
-  const APIKEY =
-    "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";
   const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (name != "" && message != "" && emailRegex.test(from)) {
     fetch("/api/contactEmail", {

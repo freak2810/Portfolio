@@ -9,7 +9,6 @@ export default async function handler(req, res) {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${APIKEY}`,
-      "Access-Control-Allow-Origin": "https://sendgrid.api-docs.io",
     },
     body: JSON.stringify({
       personalizations: [
