@@ -5,6 +5,7 @@ import EducationPage from "./components/EducationPage";
 import ProjectsPage from "./components/ProjectsPage";
 import SEO from "./components/SEO";
 import AboutPage from "./components/AboutPage";
+import ContactPage from "./components/ContactPage";
 
 export default function Home() {
     return <main>
@@ -15,5 +16,6 @@ export default function Home() {
         <EducationPage/>
         <ProjectsPage/>
         <AboutPage/>
+        <ContactPage/>
     </main>
 }

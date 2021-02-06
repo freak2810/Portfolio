@@ -1,4 +1,4 @@
-define("./workbox-9136bc0c.js",['exports'], function (exports) { 'use strict';
+define("./workbox-98be7402.js",['exports'], function (exports) { 'use strict';
 
     try {
       self['workbox:core:6.1.0'] && _();
@@ -10,7 +10,7 @@ define("./workbox-9136bc0c.js",['exports'], function (exports) { 'use strict';
       license that can be found in the LICENSE file or at
       https://opensource.org/licenses/MIT.
     */
-    const logger =  (() => {
+    const logger = (() => {
       // Don't overwrite this value if it's already set.
       // See https://github.com/GoogleChrome/workbox/pull/2284#issuecomment-560470923
       if (!('__WB_DISABLE_DEV_LOGS' in self)) {
@@ -365,7 +365,7 @@ define("./workbox-9136bc0c.js",['exports'], function (exports) { 'use strict';
       return message(details);
     };
 
-    const messageGenerator =  generatorFunction;
+    const messageGenerator = generatorFunction;
 
     /*
       Copyright 2018 Google LLC
@@ -466,7 +466,7 @@ define("./workbox-9136bc0c.js",['exports'], function (exports) { 'use strict';
       }
     };
 
-    const finalAssertExports =  {
+    const finalAssertExports = {
       hasMethod,
       isArray,
       isInstance,
@@ -2439,4 +2439,4 @@ define("./workbox-9136bc0c.js",['exports'], function (exports) { 'use strict';
     exports.registerRoute = registerRoute;
 
 });
-//# sourceMappingURL=workbox-9136bc0c.js.map
+//# sourceMappingURL=workbox-98be7402.js.map
