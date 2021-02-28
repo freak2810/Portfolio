@@ -10,10 +10,10 @@ export default function AboutPage() {
             <p>
                 <h2>Namaste !! 🐣</h2>
                 I am<span className={styles.name}>{' '}Aditya Manikanth Rao</span><br/>
-                I am from <b>Warangal</b>.<br/>
-                I am a <b>Computer Science Undergraduate</b>.<br/>
+                From <b>Warangal</b>.<br/>
+                A <b>Computer Science Undergraduate</b>.<br/>
                 A fan of The Game Of Thrones, Big Bang Theory and How I Met your Mother.<br/>
-                I love listening to Music and I'm a big fan of Arijit Singh.
+                And love listening to music and I'm a big fan of Arijit Singh.
             </p>
             <img
                 className={styles.image}

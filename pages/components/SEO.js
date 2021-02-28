@@ -2,7 +2,6 @@ import Head from 'next/head'
 
 export default function SEO() {
     return <Head>
-
         <title>Aditya's Portfolio</title>
         <meta name="title" content="Aditya's Portfolio"/>
         <meta name="author" content="Aditya Manikanth Rao"/>
