@@ -3,7 +3,7 @@ import Head from 'next/head';
 export default function SEO() {
 	return (
 		<Head>
-			<title>Aditya Manikanth Rao - Portfolio</title>
+			<title>Aditya Manikanth Rao</title>
 			<meta name='title' content="Aditya's Portfolio" />
 			<meta name='author' content='Aditya Manikanth Rao' />
 			<meta
