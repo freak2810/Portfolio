@@ -11,13 +11,13 @@ Make sure that you have Node installed in your system before you start the appli
 Run the following command
 
 ```
-npm install
+yarn install
 ```
 
 And after the dependencies are installed
 
 ```
-npm run dev
+yarn run dev
 ```
 
 ## Deployment
@@ -25,7 +25,7 @@ npm run dev
 Add additional notes about how to deploy this on a live system
 
 ```
-npm run build && npm run exports
+yarn run build && npm run exports
 ```
 
 ## Built With

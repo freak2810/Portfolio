@@ -26,8 +26,8 @@ const experience = [
 export default function ExperienceList() {
 	return (
 		<div className={styles.experienceList}>
-			{experience.map(work => (
-				<div className={styles.place}>
+			{experience.map((work, index) => (
+				<div key={index} className={styles.place}>
 					<h1>{work.role}</h1>
 					<h3>{work.company}</h3>
 					<p>{work.duration}</p>

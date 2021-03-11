@@ -61,8 +61,7 @@ export default function EducationList() {
 								href={project.link}
 								aria-roledescription='Link'
 								title='GitHub Repo'
-								target='blank'
-							>
+								target='blank'>
 								<Image
 									className={styles.eachIcon}
 									src='/Links/github.svg'
@@ -77,8 +76,7 @@ export default function EducationList() {
 								href={project.site}
 								aria-roledescription='Link'
 								title='Host Link'
-								target='blank'
-							>
+								target='blank'>
 								<Image
 									className={styles.eachIcon}
 									src='/Links/web.svg'

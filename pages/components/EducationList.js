@@ -27,8 +27,8 @@ const education = [
 export default function EducationList() {
 	return (
 		<div className={styles.educationList}>
-			{education.map(study => (
-				<div className={styles.place}>
+			{education.map((study, index) => (
+				<div key={index} className={styles.place}>
 					<h1>{study.class}</h1>
 					<h3>
 						{study.college} <span>{study.city}</span>
