@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../../styles/Technologies.module.scss';
+import styles from '../styles/Technologies.module.scss';
 
 const height = 40;
 const width = 40;

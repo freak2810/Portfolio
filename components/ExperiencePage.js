@@ -1,4 +1,4 @@
-import styles from '../../styles/Experience.module.scss';
+import styles from '../styles/Experience.module.scss';
 import ExperienceList from './ExperienceList';
 
 export default function ExperiencePage() {

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../../styles/Landing.module.scss';
+import styles from '../styles/Landing.module.scss';
 
 const height = 40;
 const width = 40;
@@ -12,8 +12,7 @@ export default function LandingPage() {
 					href='mailto:adityamanikanthrao@gmail.com'
 					aria-roledescription='Link'
 					title='adityamanikanthrao@gmail.com'
-					target='blank'
-				>
+					target='blank'>
 					<Image
 						src='/Social/gmail.svg'
 						alt='adityamanikanthrao@gmail.com'
@@ -25,8 +24,7 @@ export default function LandingPage() {
 					href='https://github.com/AdityaManikanth2810'
 					aria-roledescription='Link'
 					title='AdityaManikanth2810'
-					target='blank'
-				>
+					target='blank'>
 					<Image
 						src='/Social/github.svg'
 						alt='AdityaManikanth2810'
@@ -37,8 +35,7 @@ export default function LandingPage() {
 				<a
 					href='https://www.linkedin.com/in/aditya-manikanth-rao-11874819a/'
 					title='Aditya Manikanth Rao'
-					target='blank'
-				>
+					target='blank'>
 					<Image
 						src='/Social/linkedin.svg'
 						alt='Aditya Manikanth Rao'
@@ -49,8 +46,7 @@ export default function LandingPage() {
 				<a
 					href='https://twitter.com/rao_manikanth'
 					title='@rao_manikanth'
-					target='blank'
-				>
+					target='blank'>
 					<Image
 						src='/Social/twitter.svg'
 						alt='@rao_manikanth'
@@ -69,8 +65,7 @@ export default function LandingPage() {
 				<a
 					href='https://www.instagram.com/aditya_theawsm1/'
 					title='aditya_theawsm1'
-					target='blank'
-				>
+					target='blank'>
 					<Image
 						src='/Social/instagram.svg'
 						alt='aditya_theawsm1'

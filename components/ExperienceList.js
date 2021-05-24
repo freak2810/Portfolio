@@ -1,4 +1,4 @@
-import styles from '../../styles/Experience.module.scss';
+import styles from '../styles/Experience.module.scss';
 
 const experience = [
 	{
@@ -27,7 +27,7 @@ export default function ExperienceList() {
 	return (
 		<div className={styles.experienceList}>
 			{experience.map((work, index) => (
-				<div key={index} className={styles.place}>
+				<div key={work.duration} className={styles.place}>
 					<h1>{work.role}</h1>
 					<h3>{work.company}</h3>
 					<p>{work.duration}</p>

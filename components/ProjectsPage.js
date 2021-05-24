@@ -1,4 +1,4 @@
-import styles from '../../styles/Projects.module.scss';
+import styles from '../styles/Projects.module.scss';
 import ProjectList from './ProjectList';
 
 export default function ProjectsPage() {

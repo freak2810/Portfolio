@@ -1,4 +1,4 @@
-import styles from '../../styles/Technologies.module.scss';
+import styles from '../styles/Technologies.module.scss';
 import TechnologiesList from './TechnologiesList';
 
 export default function TechnologiesPage() {

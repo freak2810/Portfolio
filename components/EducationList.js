@@ -1,4 +1,4 @@
-import styles from '../../styles/Education.module.scss';
+import styles from '../styles/Education.module.scss';
 
 const education = [
 	{
