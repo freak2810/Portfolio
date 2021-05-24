@@ -5,6 +5,16 @@ const GET_LANDING_PAGE_PROPS = gql`
 		landingPage(where: { id: $id }) {
 			name
 			roles
+			socialLink {
+				links {
+					username
+					profileLink
+					socialProfile
+					socialIcon {
+						url
+					}
+				}
+			}
 		}
 	}
 `;

@@ -1,15 +1,14 @@
 import SEO from '../components/SEO';
-import Landing, { LandingProps } from '../components/Landing';
+import Landing from '../components/Landing';
 import GET_LANDING_PAGE_PROPS from '../apollo/queries/getLandingPageProps';
 import client from '../apollo/client';
-
-interface LandingPageProps extends LandingProps {}
+import LandingPageProps from '../types/LandingPageProps';
 
 export default function Home(props: LandingPageProps) {
 	return (
 		<div>
 			<SEO />
-			<Landing name={props.name} roles={props.roles} />
+			<Landing name={props.name} roles={props.roles} links={props.links} />
 		</div>
 	);
 }
@@ -20,9 +19,11 @@ export async function getStaticProps() {
 		variables: { id: process.env.USER_ID },
 	});
 
-	const { name, roles } = data.landingPage;
-
 	return {
-		props: { name, roles },
+		props: {
+			name: data.landingPage.name,
+			roles: data.landingPage.roles,
+			links: data.landingPage.socialLink.links,
+		},
 	};
 }

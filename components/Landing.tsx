@@ -1,17 +1,16 @@
+import React from 'react';
+import { LandingProps } from '../types/LandingPageProps';
+import SocialLinks from './SocialLinks';
 import TypeWriterEffect from './TypeWriterEffect';
 
-export interface LandingProps {
-	name: string;
-	roles: string[];
-}
-
-export default function Landing({ name, roles }: LandingProps) {
+export default function Landing({ name, roles, links }: LandingProps) {
 	return (
 		<div className='container w-screen h-screen flex flex-col justify-center items-center'>
-			<h1 className='font-title text-4xl md:text-7xl lg:text-8xl font-semibold'>
+			<h1 className='font-title font-semibold text-5xl text-center select-none md:text-7xl lg:text-8xl'>
 				{name}
 			</h1>
 			<TypeWriterEffect roles={roles} />
+			<SocialLinks links={links} />
 		</div>
 	);
 }
