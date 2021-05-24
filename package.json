@@ -5,7 +5,9 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start"
+		"start": "next start",
+		"clean": "npx rimraf node-modules .next package-lock.json",
+		"clean-install": "yarn run clean && yarn"
 	},
 	"dependencies": {
 		"@apollo/client": "^3.3.19",
