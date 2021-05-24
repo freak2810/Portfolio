@@ -1,28 +1,3 @@
-@import "base/typography";
-@import "base/utilities";
-@import "base/default";
-@import "mixins/container";
-
-h1,div {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h2, h3, h4, h5, h6, p, li, span {
-  font-family: 'Lato', sans-serif;
-}
-
-html::-webkit-scrollbar {
-  display: none;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
