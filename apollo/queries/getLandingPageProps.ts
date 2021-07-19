@@ -10,9 +10,6 @@ const GET_LANDING_PAGE_PROPS = gql`
 					username
 					profileLink
 					socialProfile
-					socialIcon {
-						url
-					}
 				}
 			}
 		}
