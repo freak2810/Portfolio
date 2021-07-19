@@ -1,10 +1,13 @@
 import Head from 'next/head';
 
-export default function SEO() {
-	return (
-		<Head>
-			<title>{`Aditya's Portfolio`}</title>
+interface SEOProps {
+    title?: string
+}
 
-		</Head>
-	);
+export default function SEO({title}: SEOProps) {
+    return (
+        <Head>
+            <title>{title || `Aditya's Portfolio`}</title>
+        </Head>
+    );
 }

@@ -9,7 +9,7 @@ const Link = (link: SocialLinkProps) => {
 			aria-roledescription='Link'
 			target='blank'
 			href={link.profileLink || `mailto:${link.username}`}>
-			<Icon type={link.socialProfile} />
+			<Icon name={link.socialProfile} />
 		</a>
 	);
 };

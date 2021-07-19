@@ -6,10 +6,10 @@ import LandingPageProps from '../types/LandingPageProps';
 
 export default function Home(props: LandingPageProps) {
 	return (
-		<div className=''>
+		<>
 			<SEO />
 			<Landing name={props.name} roles={props.roles} links={props.links} />
-		</div>
+		</>
 	);
 }
 
