@@ -7,6 +7,10 @@ module.exports = {
 			title: ['Sacramento', 'cursive'],
 			'sans-serif': ['Lato', 'sans-serif'],
 		},
+		colors: {
+			background: '#222831',
+			text: '#DDDDDD',
+		},
 		extend: {},
 	},
 	variants: {

@@ -5,6 +5,8 @@ import Document, {
 	NextScript,
 	DocumentContext,
 } from 'next/document';
+import React from 'react';
+import Navbar from '../components/Navbar';
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
@@ -27,6 +29,7 @@ class MyDocument extends Document {
 					/>
 				</Head>
 				<body>
+					<Navbar />
 					<Main />
 					<NextScript />
 				</body>

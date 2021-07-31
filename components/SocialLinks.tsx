@@ -1,3 +1,4 @@
+import { SocialIcon } from '../types/Icons';
 import SocialLinksProps, { SocialLinkProps } from '../types/SocialLinkProps';
 import Icon from './Icon';
 
@@ -9,7 +10,7 @@ const Link = (link: SocialLinkProps) => {
 			aria-roledescription='Link'
 			target='blank'
 			href={link.profileLink || `mailto:${link.username}`}>
-			<Icon name={link.socialProfile} />
+			<Icon name={link.socialProfile as SocialIcon} />
 		</a>
 	);
 };
