@@ -42,10 +42,8 @@ export interface IconProps {
 	size?: number;
 }
 
-const DIMENSION = 35;
-
 export default function Icon({ name, color, size }: IconProps) {
-	const DIMENSION = size || 35;
+	const DIMENSION = size || '2.5rem';
 
 	if (name === 'Gmail ID')
 		return (
