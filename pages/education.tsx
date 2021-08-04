@@ -14,15 +14,16 @@ export default function Education({ institutes }: EducationPageProps) {
 				</h1>
 				<main className='flex flex-col items-center my-4'>
 					{institutes.map(i => (
-						<div className='w-3/4 my-8' key={i.id}>
+						<div className='w-full my-4 lg:w-8/12' key={i.id}>
 							<h1 className='my-2 text-4xl font-semibold'>{i.courseName}</h1>
 							<h2 className='mt-2 text-2xl font-semibold'>
 								{i.instituteName}
 								<span className='ml-2 text-lg font-medium'>{i.location}</span>
 							</h2>
-							<h2 className='mb-2 text-lg font-medium'>{i.caption}</h2>
-							<h3>{i.duration}</h3>
-							<h4>{i.marksPercentage}</h4>
+							<h2 className='text-lg font-medium'>{i.caption}</h2>
+							<h3 className=''>{i.duration}</h3>
+							<h4 className='font-semibold'>{i.marksPercentage}</h4>
+							<p className='my-2 whitespace-pre-wrap'>{i.description}</p>
 						</div>
 					))}
 				</main>

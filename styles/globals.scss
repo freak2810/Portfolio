@@ -9,7 +9,6 @@
 // https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e
 
 $bg: #f9f7f7;
-// $text: #222831;
 $text: #112d4e;
 
 html {
@@ -18,23 +17,13 @@ html {
 	font-family: 'Baloo 2', sans-serif;
 }
 
-// h1,
-// span {
-// 	color: $text;
-// }
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
 
-// svg {
-// 	color: #222831;
-// 	transition: all 0.5s;
-// }
-
-// svg:hover {
-// 	color: #00adb5;
-// }
-
-// span {
-// 	font-weight: 100 !important;
-// }
+::-webkit-scrollbar-thumb {
+	background: $text;
+}
 
 @media (min-width: 1024px) {
 	.hamburger-menu {
