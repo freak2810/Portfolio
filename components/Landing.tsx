@@ -1,7 +1,10 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 import { LandingProps } from '../types/LandingPageProps';
 import SocialLinks from './SocialLinks';
 import TypeWriterEffect from './TypeWriterEffect';
+
+// आदित्य मणिकंठ राव
 
 export default function Landing({ name, roles, links }: LandingProps) {
 	return (

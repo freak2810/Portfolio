@@ -5,6 +5,7 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			title: ['Sacramento', 'cursive'],
+			// title: ['WindSong', 'cursive'],
 		},
 		colors: {
 			background: '#222831',
