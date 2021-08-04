@@ -9,7 +9,7 @@ const StyledLink = ({ address, title }: { address: string; title: string }) => {
 		<li className='mx-2'>
 			<Link href={address}>
 				<a
-					className='px-2 py-1 font-medium transition-all duration-300 rounded-md text-[#EEEEEE] hover:bg-[#DBE2EF] hover:text-[#112d4e] hover:underline'
+					className='px-2 py-1 font-medium transition-all duration-300 rounded-lg text-[#EEEEEE] hover:bg-[#DBE2EF] hover:text-[#112d4e]'
 					style={address === pathname ? { border: '1px solid #DBE2EF' } : {}}>
 					{title}
 				</a>
