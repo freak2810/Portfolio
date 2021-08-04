@@ -5,7 +5,6 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			title: ['Sacramento', 'cursive'],
-			'sans-serif': ['Lato', 'sans-serif'],
 		},
 		colors: {
 			background: '#222831',

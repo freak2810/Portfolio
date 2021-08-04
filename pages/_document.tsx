@@ -23,10 +23,6 @@ class MyDocument extends Document {
 						href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap'
 						rel='stylesheet'
 					/>
-					<link
-						href='https://fonts.googleapis.com/css2?family=Lato&display=swap'
-						rel='stylesheet'
-					/>
 				</Head>
 				<body>
 					<Navbar />

@@ -2,13 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-// html {
-// 	background-color: $bg;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@200;300;400;500;600;700&display=swap');
+
+// https://colorhunt.co/palette/faf3f3e1e5eaa7bbc7da7f8f
+
+// https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e
+
+$bg: #f9f7f7;
+// $text: #222831;
+$text: #112d4e;
+
+html {
+	background-color: $bg;
+	color: $text;
+	font-family: 'Baloo 2', sans-serif;
+}
 
 // h1,
 // span {
 // 	color: $text;
+// }
+
+// svg {
+// 	color: #222831;
+// 	transition: all 0.5s;
+// }
+
+// svg:hover {
+// 	color: #00adb5;
 // }
 
 // span {

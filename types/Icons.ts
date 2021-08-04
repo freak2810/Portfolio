@@ -4,6 +4,7 @@ import {
 	UILibraries,
 	BackEnd,
 	Databases,
+	DevOps,
 } from './TechnologyPageProps';
 
 export type SocialIcon =
@@ -19,6 +20,7 @@ type Icon =
 	| FrontEnd
 	| UILibraries
 	| BackEnd
-	| Databases;
+	| Databases
+	| DevOps;
 
 export default Icon;

@@ -27,8 +27,16 @@ export type BackEnd = 'NodeJS' | 'Express' | 'GraphQL';
 
 export type Databases = 'MySQL' | 'PostgreSQL' | 'MongoDB' | 'Redis';
 
+export type DevOps = 'Git' | 'GitHub' | 'Docker';
+
 export interface TechnologyProps {
-	name: ProgrammingLanguages | FrontEnd | UILibraries | BackEnd | Databases;
+	name:
+		| ProgrammingLanguages
+		| FrontEnd
+		| UILibraries
+		| BackEnd
+		| Databases
+		| DevOps;
 }
 
 export interface TechnologyStackProps {

@@ -34,7 +34,10 @@ import {
 } from '@styled-icons/simple-icons';
 
 import { Nodedotjs, Express, Graphql } from '@styled-icons/simple-icons';
+
 import { Mysql, Postgresql, Mongodb, Redis } from '@styled-icons/simple-icons';
+
+import { Git, Docker } from '@styled-icons/simple-icons';
 
 export interface IconProps {
 	name: IconType;
@@ -255,6 +258,17 @@ export default function Icon({ name, color, size }: IconProps) {
 	else if (name === 'Redis')
 		return (
 			<Redis height={DIMENSION} width={DIMENSION} color={color || '#DC382D'} />
+		);
+	//
+	// Misc
+	//
+	else if (name === 'Git')
+		return (
+			<Git height={DIMENSION} width={DIMENSION} color={color || '#F05032'} />
+		);
+	else if (name === 'Docker')
+		return (
+			<Docker height={DIMENSION} width={DIMENSION} color={color || '#2496ED'} />
 		);
 	else return <div />;
 }
