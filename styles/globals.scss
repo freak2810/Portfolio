@@ -32,3 +32,18 @@ html {
 		display: none !important;
 	}
 }
+
+input,
+textarea {
+	background: $bg;
+	outline: none;
+	color: $text;
+
+	&::placeholder {
+		color: #112d4e80;
+	}
+}
+
+button {
+	outline: none !important;
+}

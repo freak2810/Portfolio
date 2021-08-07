@@ -8,8 +8,9 @@ module.exports = {
 			// title: ['WindSong', 'cursive'],
 		},
 		colors: {
-			background: '#222831',
-			text: '#DDDDDD',
+			text: '#112d4e',
+			background: '#f9f7f7',
+			splash: '#E84855',
 		},
 		extend: {},
 	},
