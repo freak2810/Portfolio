@@ -12,6 +12,7 @@
 
 $bg: #f9f7f7;
 $text: #112d4e;
+$splash: #e84855;
 
 html {
 	background-color: $bg;
@@ -46,4 +47,15 @@ textarea {
 
 button {
 	outline: none !important;
+}
+
+.md {
+	li {
+		list-style: disc;
+		margin-left: 2rem;
+	}
+
+	a:hover {
+		color: $splash;
+	}
 }

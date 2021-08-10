@@ -1,8 +1,18 @@
 import gql from 'graphql-tag';
 
 const GET_EDUCATION_PAGE_PROPS = gql`
-	query getLandingPageProps($id: ID!) {
-		educationDetail(where: { id: $id }) {
+	query getEducationDetails($educationId: ID!, $employmentId: ID!) {
+		companyDetail(where: { id: $employmentId }) {
+			companies {
+				id
+				role
+				name
+				duration
+				jobType
+				achievements
+			}
+		}
+		educationDetail(where: { id: $educationId }) {
 			educationInstitutes {
 				id
 				instituteName

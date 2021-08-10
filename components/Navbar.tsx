@@ -46,15 +46,6 @@ export const webView = (
 export default function Navbar() {
 	const { pathname } = useRouter();
 
-	const [isContactUsPage, setIsContactUsPage] = useState(
-		pathname === '/contact'
-	);
-
-	useEffect(() => {
-		setIsContactUsPage(pathname === '/contact');
-		console.log(pathname);
-	}, [pathname]);
-
 	return pathname === '/contact' ? (
 		<div />
 	) : (

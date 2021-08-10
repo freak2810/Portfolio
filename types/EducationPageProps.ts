@@ -1,4 +1,4 @@
-export interface EducationInstitute {
+export interface EducationInstituteProps {
 	id: string;
 	instituteName: string;
 	caption?: string;
@@ -9,6 +9,16 @@ export interface EducationInstitute {
 	description?: string;
 }
 
+export interface CompanyProps {
+	id: string;
+	role: string;
+	name: string;
+	duration: string;
+	jobType: string;
+	achievements?: string;
+}
+
 export default interface EducationPageProps {
-	institutes: EducationInstitute[];
+	institutes: EducationInstituteProps[];
+	companies: CompanyProps[];
 }
