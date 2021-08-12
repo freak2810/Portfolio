@@ -21,8 +21,7 @@ export default function Contact() {
 					<menu className='w-auto'>{webView}</menu>
 					<Hamburger
 						onClick={openModal}
-						className='hamburger-menu'
-						color='#112d4e'
+						className='transition-all duration-300 cursor-pointer hamburger-menu text-text hover:text-splash'
 						height={16}
 						width={16}
 					/>

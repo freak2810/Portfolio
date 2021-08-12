@@ -9,8 +9,8 @@ const StyledLink = ({ address, title }: { address: string; title: string }) => {
 
 	const anchorStyles =
 		pathname === '/contact'
-			? 'px-2 py-1 font-medium transition-all duration-300 rounded-lg text-[#112d4e] hover:bg-[#112d4e] hover:text-[#DBE2EF]'
-			: 'px-2 py-1 font-medium transition-all duration-300 rounded-lg text-[#DBE2EF] hover:bg-[#DBE2EF] hover:text-[#112d4e]';
+			? 'px-2 py-1 font-medium transition-all duration-300 rounded-lg text-text hover:bg-text hover:text-background'
+			: 'px-2 py-1 font-medium transition-all duration-300 rounded-lg text-background hover:bg-background hover:text-text';
 
 	return (
 		<li className='mx-2'>
@@ -51,16 +51,15 @@ export default function Navbar() {
 	return pathname === '/contact' ? (
 		<div />
 	) : (
-		<header className={`absolute top-0 w-full h-13 bg-[#112d4e]`}>
+		<header className={`absolute top-0 w-full h-13 bg-text`}>
 			<nav className='container flex items-center justify-between px-4 mx-auto'>
 				<Link href='/'>
-					<a className='text-2xl font-medium font-title text-[#F9F7F7]'>{`Aditya Manikanth Rao`}</a>
+					<a className='text-2xl font-medium font-title text-background'>{`Aditya Manikanth Rao`}</a>
 				</Link>
 				<menu className='w-auto'>{webView}</menu>
 				<Hamburger
 					onClick={openModal}
-					className='hamburger-menu'
-					color='#F9F7F7'
+					className='transition-all duration-300 cursor-pointer hamburger-menu text-background hover:text-splash'
 					height={16}
 					width={16}
 				/>
