@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { Hamburger } from '@styled-icons/fa-solid';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import NavigationModal from './NavigationModal';
+import { useNavigationContext } from '../context/NavigationContext';
 
 const StyledLink = ({ address, title }: { address: string; title: string }) => {
 	const { pathname } = useRouter();
@@ -45,6 +46,7 @@ export const webView = (
 
 export default function Navbar() {
 	const { pathname } = useRouter();
+	const { openModal } = useNavigationContext();
 
 	return pathname === '/contact' ? (
 		<div />
@@ -56,12 +58,14 @@ export default function Navbar() {
 				</Link>
 				<menu className='w-auto'>{webView}</menu>
 				<Hamburger
+					onClick={openModal}
 					className='hamburger-menu'
 					color='#F9F7F7'
 					height={16}
 					width={16}
 				/>
 			</nav>
+			<NavigationModal />
 		</header>
 	);
 }

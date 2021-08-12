@@ -5,8 +5,12 @@ import React from 'react';
 import { webView } from '../components/Navbar';
 import SEO from '../components/SEO';
 import ContactForm from '../components/ContactForm';
+import NavigationModal from '../components/NavigationModal';
+import { useNavigationContext } from '../context/NavigationContext';
 
 export default function Contact() {
+	const { openModal } = useNavigationContext();
+
 	return (
 		<>
 			<header className='absolute top-0 w-full h-13 bg-[#F9F7F7]'>
@@ -16,12 +20,14 @@ export default function Contact() {
 					</Link>
 					<menu className='w-auto'>{webView}</menu>
 					<Hamburger
+						onClick={openModal}
 						className='hamburger-menu'
 						color='#112d4e'
 						height={16}
 						width={16}
 					/>
 				</nav>
+				<NavigationModal />
 			</header>
 			<SEO />
 			<section className='min-h-screen lg:h-screen grid place-items-center pt-16 bg-[#112d4e]'>

@@ -67,8 +67,6 @@ export async function getStaticProps() {
 		},
 	});
 
-	console.log(data.companyDetail);
-
 	return {
 		props: {
 			institutes: data.educationDetail.educationInstitutes,
