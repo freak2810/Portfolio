@@ -15,7 +15,9 @@ export default function Technologies({ stacks }: TechnologyPageProps) {
 				<main className='grid grid-cols-1 lg:grid-cols-2'>
 					{stacks.map((stack, index) => (
 						<article key={index} className='mx-2 my-4'>
-							<h1 className='text-2xl text-center md:text-3xl'>{stack.name}</h1>
+							<h1 className='text-2xl font-medium text-center md:text-3xl'>
+								{stack.name}
+							</h1>
 							<div className='flex flex-wrap justify-center my-5'>
 								{stack.technologies.map(t => (
 									<div className='mx-4 mb-5 lg:mx-7' key={t.name}>
