@@ -1,20 +1,22 @@
 import gql from 'graphql-tag';
 
 const GET_PROJECT_PAGE_PROPS = gql`
-	query getProjectDetails {
-		projects {
-			id
-			name
-			githubLink
-			deploymentUrl
-			technologies {
+	query getProjectDetails($id: ID!) {
+		projectsPage(where: { id: $id }) {
+			projects {
+				id
 				name
-			}
-			description {
-				markdown
-			}
-			cover {
-				url
+				githubLink
+				deploymentUrl
+				technologies {
+					name
+				}
+				description {
+					markdown
+				}
+				cover {
+					url
+				}
 			}
 		}
 	}

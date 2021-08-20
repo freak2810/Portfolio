@@ -78,11 +78,14 @@ export default function Projects({ projects }: ProjectPageProps) {
 export async function getStaticProps() {
 	const { data } = await client.query({
 		query: GET_PROJECT_PAGE_PROPS,
+		variables: {
+			id: 'cks91ebsofzzd0b05z5fns90z',
+		},
 	});
 
 	return {
 		props: {
-			projects: data.projects,
+			projects: data.projectsPage.projects,
 		},
 	};
 }
