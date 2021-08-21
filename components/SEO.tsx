@@ -7,7 +7,7 @@ interface SEOProps {
 export default function SEO({ title }: SEOProps) {
 	return (
 		<Head>
-			<title>{title || `Aditya Manikanth Rao- Portfolio`}</title>
+			<title>{title || `Aditya Manikanth Rao - Portfolio`}</title>
 			<meta name='viewport' content='width=device-width' />
 			<link rel='icon' href='logo.png' type='image/x-icon' />
 			<meta name='title' content={title || `Aditya's Portfolio`} />
