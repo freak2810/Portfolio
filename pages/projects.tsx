@@ -19,7 +19,7 @@ export default function Projects({ projects }: ProjectPageProps) {
 				<main>
 					{projects.map(p => (
 						<a target='blank' key={p.id} href={p.githubLink || p.deploymentUrl}>
-							<article className='my-4 md:my-8 p-2 pl-4 transition-all duration-300 border-2 border-l-2 rounded-lg hover:shadow-xl border-[transparent] hover:border-text shadow-[#00ff00]'>
+							<article className='my-4 md:my-8 p-2 pl-4 transition-all duration-300 border-2 border-l-2 rounded-lg hover:shadow-xl border-[transparent] hover:border-text'>
 								<div className='my-1'>
 									{p.cover && (
 										<Image
