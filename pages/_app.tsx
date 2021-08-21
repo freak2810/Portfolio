@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<NavigationModalContextProvider>
 			<Navbar />
-
 			<Component {...pageProps} />
 		</NavigationModalContextProvider>
 	);

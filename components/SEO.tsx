@@ -9,6 +9,7 @@ export default function SEO({ title }: SEOProps) {
 		<Head>
 			<title>{title || `Aditya Manikanth Rao- Portfolio`}</title>
 			<meta name='viewport' content='width=device-width' />
+			<link rel='icon' href='logo.png' type='image/x-icon' />
 			<meta name='title' content={title || `Aditya's Portfolio`} />
 			<meta name='author' content='Aditya Manikanth Rao' />
 			<meta charSet='UTF-8' />

@@ -13,10 +13,10 @@ export default function Contact() {
 
 	return (
 		<>
-			<header className='absolute top-0 w-full h-13 bg-[#F9F7F7]'>
+			<header className='absolute top-0 w-full h-13 bg-background'>
 				<nav className='container flex items-center justify-between px-4 mx-auto'>
 					<Link href='/'>
-						<a className='text-2xl font-medium font-title text-[#112d4e]'>{`Aditya Manikanth Rao`}</a>
+						<a className='text-2xl font-medium font-title'>{`Aditya Manikanth Rao`}</a>
 					</Link>
 					<menu className='w-auto'>{webView}</menu>
 					<Hamburger
@@ -29,10 +29,10 @@ export default function Contact() {
 				<NavigationModal />
 			</header>
 			<SEO />
-			<section className='min-h-screen lg:h-screen grid place-items-center pt-16 bg-[#112d4e]'>
+			<section className='grid min-h-screen pt-16 lg:h-screen place-items-center bg-text'>
 				<main className='container items-center px-4 mx-auto justify-items-center lg:justify-around lg:flex'>
 					<div className='max-w-sm mx-auto lg:max-w-none'>
-						<h1 className='text-5xl text-center text-[#F9F7F7]'>{`I'd love to hear from you`}</h1>
+						<h1 className='text-5xl text-center text-background'>{`I'd love to hear from you`}</h1>
 						<Image
 							src={'/img/music.svg'}
 							height={1}
