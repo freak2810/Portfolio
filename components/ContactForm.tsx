@@ -35,7 +35,7 @@ export default function ContactForm() {
 						setEmail('');
 						setMessage('');
 					},
-					error => {
+					() => {
 						setSubmissionFailed(true);
 						setTimeout(() => setSubmissionFailed(false), 5000);
 					}
@@ -49,7 +49,7 @@ export default function ContactForm() {
 			onSubmit={onFormSubmitHandler}
 			className='max-w-sm mx-auto lg:max-w-none flex flex-col items-center px-4 my-2 lg:px-8 lg:py-4 border rounded-lg border-[#E84855]'>
 			<h1 className='hidden my-2 text-4xl text-background lg:inline'>
-				Leave a message
+				Drop a message
 			</h1>
 			<div className='flex flex-col w-full my-4 text-background lg:w-96'>
 				<label htmlFor='name' className='my-1 text-[#E84855]'>
@@ -98,7 +98,7 @@ export default function ContactForm() {
 			<input
 				value={setSubmitButtonTitle()}
 				type='submit'
-				className='px-8 py-2 my-4 font-medium transition-colors duration-300 rounded-md lg:my-1 text-md bg-background hover:bg-splash hover:text-background'
+				className='px-8 py-2 my-4 font-medium transition-colors duration-300 rounded-md cursor-pointer lg:my-1 text-md bg-background hover:bg-splash hover:text-background'
 			/>
 		</form>
 	);
