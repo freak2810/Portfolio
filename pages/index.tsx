@@ -3,6 +3,7 @@ import Landing from '../components/Landing';
 import GET_LANDING_PAGE_PROPS from '../apollo/queries/getLandingPageProps';
 import client from '../apollo/client';
 import LandingPageProps from '../types/LandingPageProps';
+import React from 'react';
 
 export default function Home(props: LandingPageProps) {
 	return (
