@@ -5,4 +5,9 @@ export interface LandingProps extends SocialLinks {
 	roles: string[];
 }
 
-export default interface LandingPageProps extends LandingProps {}
+export interface AboutProps {
+	about: string;
+	image: string;
+}
+
+export default interface LandingPageProps extends LandingProps, AboutProps {}

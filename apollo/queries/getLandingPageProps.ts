@@ -12,6 +12,12 @@ const GET_LANDING_PAGE_PROPS = gql`
 					socialProfile
 				}
 			}
+			about {
+				markdown
+			}
+			image {
+				url
+			}
 		}
 	}
 `;
