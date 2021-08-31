@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import { AboutProps } from '../types/LandingPageProps';
+import Image from 'next/image';
 
 export default function About({ about, image }: AboutProps) {
 	return (
@@ -11,12 +12,12 @@ export default function About({ about, image }: AboutProps) {
 				<div className='px-2 my-10 lg:px-8 lg:w-2/3 lg:my-0'>
 					<ReactMarkdown className='lg:text-lg md about'>{about}</ReactMarkdown>
 				</div>
-				<img
+				<Image
 					src={image}
 					alt='Aditya Manikanth Rao'
-					className='rounded rounded-xl'
+					layout='fixed'
 					width={350}
-					height='auto'
+					height={466.66}
 				/>
 			</div>
 		</div>
