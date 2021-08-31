@@ -10,9 +10,10 @@ export default function About({ about, image }: AboutProps) {
 			</h1>
 			<div className='flex flex-col-reverse items-center justify-center px-5 my-10 lg:px-10 lg:flex-row'>
 				<div className='px-2 my-10 lg:px-8 lg:w-2/3 lg:my-0'>
-					<ReactMarkdown className='lg:text-lg md about'>{about}</ReactMarkdown>
+					<ReactMarkdown className='text-lg md about'>{about}</ReactMarkdown>
 				</div>
 				<Image
+					className='cursor-pointer rounded-xl'
 					src={image}
 					alt='Aditya Manikanth Rao'
 					layout='fixed'
