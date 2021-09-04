@@ -16,7 +16,7 @@ export default function Contact() {
 			<header className='absolute top-0 w-full h-13 bg-background'>
 				<nav className='container flex items-center justify-between px-4 mx-auto'>
 					<Link href='/'>
-						<a className='text-2xl font-medium font-title'>{`Aditya Manikanth Rao`}</a>
+						<a className='py-1 text-2xl font-medium lg:py-0 font-title'>{`Aditya Manikanth Rao`}</a>
 					</Link>
 					<menu className='w-auto'>{webView}</menu>
 					<Hamburger

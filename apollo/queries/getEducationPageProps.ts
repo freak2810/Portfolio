@@ -12,6 +12,7 @@ const GET_EDUCATION_PAGE_PROPS = gql`
 				achievements
 			}
 		}
+
 		educationDetail(where: { id: $educationId }) {
 			educationInstitutes {
 				id

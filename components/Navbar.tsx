@@ -49,19 +49,19 @@ export default function Navbar() {
 	const { openModal } = useNavigationContext();
 
 	return pathname === '/contact' ? (
-		<div />
+		<></>
 	) : (
-		<header className={`absolute top-0 w-full h-13 bg-text`}>
-			<nav className='container flex items-center justify-between px-4 mx-auto'>
+		<header className={`absolute top-0 w-full bg-text`}>
+			<nav className='container flex items-center justify-between h-20 px-4 mx-auto'>
 				<Link href='/'>
-					<a className='text-2xl font-medium font-title text-background'>{`Aditya Manikanth Rao`}</a>
+					<a className='py-1 lg:py-0 text-2xl font-medium font-title text-background'>{`Aditya Manikanth Rao`}</a>
 				</Link>
 				<menu className='w-auto'>{webView}</menu>
 				<Hamburger
 					onClick={openModal}
-					className='transition-all duration-300 cursor-pointer hamburger-menu text-background hover:text-splash'
-					height={16}
-					width={16}
+					className='my-1 transition-all duration-300 cursor-pointer hamburger-menu text-background hover:text-splash'
+					height={20}
+					width={20}
 				/>
 			</nav>
 			<NavigationModal />
