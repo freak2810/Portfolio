@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router';
-import React from 'react';
 import { LandingProps } from '../types/LandingPageProps';
 import SocialLinks from './SocialLinks';
 import TypeWriterEffect from './TypeWriterEffect';

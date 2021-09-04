@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Modal from 'react-modal';
 import Link from 'next/link';
 import { Times } from '@styled-icons/fa-solid';
@@ -26,7 +25,7 @@ export default function NavigationModal() {
 			isOpen={isOpen}
 			shouldCloseOnEsc
 			onRequestClose={closeModal}
-			className='w-screen h-screen  bg-background'
+			className='w-screen h-screen bg-background'
 			contentLabel='Mobile navigation Modal'>
 			<div
 				onClick={closeModal}

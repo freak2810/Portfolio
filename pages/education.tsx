@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import client from '../apollo/client';
 import GET_EDUCATION_PAGE_PROPS from '../apollo/queries/getEducationPageProps';

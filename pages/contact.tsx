@@ -1,7 +1,6 @@
 import { Hamburger } from '@styled-icons/fa-solid';
 import Link from 'next/link';
 import Image from 'next/image';
-import React from 'react';
 import { webView } from '../components/Navbar';
 import SEO from '../components/SEO';
 import ContactForm from '../components/ContactForm';
