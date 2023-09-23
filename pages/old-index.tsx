@@ -18,8 +18,10 @@ export default function Home(props: LandingPageProps) {
 export async function getStaticProps() {
 	const { data } = await client.query({
 		query: GET_LANDING_PAGE_PROPS,
-		variables: { id: process.env.USER_ID },
+		variables: { landingPage: '02b23706-d758-42e6-bb64-bb916d13d48d' },
 	});
+
+	console.log(data);
 
 	return {
 		props: {

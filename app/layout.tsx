@@ -1,4 +1,4 @@
-import NavigationModalContextProvider from '../context/NavigationContext';
+import '../styles/globals.scss';
 
 interface RootLayoutProps {
 	children: React.ReactNode;

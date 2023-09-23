@@ -1,22 +1,21 @@
-import gql from 'graphql-tag';
+import { gql } from '@apollo/client';
 
 const GET_LANDING_PAGE_PROPS = gql`
-	query getLandingPageProps($id: ID!) {
-		landingPage(where: { id: $id }) {
-			name
+	query HomePage($landingPage: ID!) {
+		LandingPage(id: $landingPage) {
+			_id
 			roles
-			socialLink {
-				links {
-					username
-					profileLink
-					socialProfile
+			name
+			socialLinks {
+				username
+				profileLink
+				socialProfile
+			}
+			bioRaw
+			profilePicture {
+				asset {
+					url
 				}
-			}
-			about {
-				markdown
-			}
-			image {
-				url
 			}
 		}
 	}
