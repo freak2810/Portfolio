@@ -25,6 +25,7 @@ export default function NavigationModalContextProvider({
 	const closeModal = () => setIsOpen(false);
 
 	return (
+		// @ts-ignore
 		<NavigationModalContext.Provider value={{ isOpen, openModal, closeModal }}>
 			{children}
 		</NavigationModalContext.Provider>
