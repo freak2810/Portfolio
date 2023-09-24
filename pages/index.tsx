@@ -6,11 +6,13 @@ import LandingPageProps from '../types/LandingPageProps';
 import About from '../components/About';
 
 export default function Home(props: LandingPageProps) {
+	console.log(props);
+
 	return (
 		<>
-			<SEO />
-			<Landing name={props.name} roles={props.roles} links={props.links} />
-			<About about={props.about} image={props.image} />
+			{/* <SEO /> */}
+			{/* <Landing name={props.name} roles={props.roles} links={props.links} /> */}
+			{/* <About about={props.about} image={props.image} /> */}
 		</>
 	);
 }
@@ -21,15 +23,13 @@ export async function getStaticProps() {
 		variables: { landingPage: '02b23706-d758-42e6-bb64-bb916d13d48d' },
 	});
 
-	console.log(data);
-
 	return {
 		props: {
-			name: data.landingPage.name,
-			roles: data.landingPage.roles,
-			links: data.landingPage.socialLink.links,
-			about: data.landingPage.about.markdown,
-			image: data.landingPage.image.url,
+			name: data.LandingPage.name,
+			roles: data.LandingPage.roles,
+			links: data.LandingPage.socialLinks,
+			about: data.LandingPage.bioRaw,
+			image: data.LandingPage.profilePicture.asset,
 		},
 	};
 }

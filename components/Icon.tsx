@@ -4,8 +4,8 @@ import {
 	Linkedin,
 	Twitter,
 	Instagram,
-} from '@styled-icons/simple-icons';
-
+} from 'styled-icons/simple-icons';
+import styled from 'styled-components';
 import IconType from '../types/Icons';
 import {
 	Javascript,
@@ -13,7 +13,7 @@ import {
 	C,
 	Cplusplus,
 	Python,
-} from '@styled-icons/simple-icons';
+} from 'styled-icons/simple-icons';
 
 import {
 	Html5,
@@ -24,20 +24,20 @@ import {
 	Apollographql,
 	Nextdotjs,
 	Expo,
-} from '@styled-icons/simple-icons';
+} from 'styled-icons/simple-icons';
 
 import {
 	Bootstrap,
 	Tailwindcss,
 	Chakraui,
-	Materialui,
-} from '@styled-icons/simple-icons';
+	Materialdesign,
+} from 'styled-icons/simple-icons';
 
-import { Nodedotjs, Express, Graphql } from '@styled-icons/simple-icons';
+import { Nodedotjs, Express, Graphql } from 'styled-icons/simple-icons';
 
-import { Mysql, Postgresql, Mongodb, Redis } from '@styled-icons/simple-icons';
+import { Mysql, Postgresql, Mongodb, Redis } from 'styled-icons/simple-icons';
 
-import { Git, Docker } from '@styled-icons/simple-icons';
+import { Git, Docker } from 'styled-icons/simple-icons';
 
 export interface IconProps {
 	name: IconType;
@@ -49,226 +49,214 @@ export default function Icon({ name, color, size }: IconProps) {
 	const DIMENSION = size || '2.5rem';
 
 	if (name === 'Gmail ID')
-		return (
-			<Gmail height={DIMENSION} width={DIMENSION} color={color || '#EA4335'} />
-		);
+		return styled(Gmail)`
+			color: ${color || '#EA4335'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'GitHub')
-		return (
-			<Github height={DIMENSION} width={DIMENSION} color={color || '#181717'} />
-		);
+		return styled(Github)`
+			color: ${color || '#181717'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'LinkedIn')
-		return (
-			<Linkedin
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#0A66C2'}
-			/>
-		);
+		return styled(Linkedin)`
+			color: ${color || '#0077B5'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Twitter')
-		return (
-			<Twitter
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#1DA1F2'}
-			/>
-		);
+		return styled(Twitter)`
+			color: ${color || '#1DA1F2'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Instagram')
-		return (
-			<Instagram
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#E4405F'}
-			/>
-		);
+		return styled(Instagram)`
+			color: ${color || '#E4405F'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	//
 	// Programming Languages
 	//
 	else if (name === 'JavaScript')
-		return (
-			<Javascript
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#F7DF1E'}
-			/>
-		);
+		return styled(Javascript)`
+			color: ${color || '#F7DF1E'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'TypeScript')
-		return (
-			<Typescript
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#3178C6'}
-			/>
-		);
+		return styled(Typescript)`
+			color: ${color || '#007ACC'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'C')
-		return (
-			<C height={DIMENSION} width={DIMENSION} color={color || '#A8B9CC'} />
-		);
+		return styled(C)`
+			color: ${color || '#A8B9CC'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'C++')
-		return (
-			<Cplusplus
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#00599C'}
-			/>
-		);
+		return styled(Cplusplus)`
+			color: ${color || '#00599C'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Python')
-		return (
-			<Python height={DIMENSION} width={DIMENSION} color={color || '#00599C'} />
-		);
+		return styled(Python)`
+			color: ${color || '#3776AB'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	//
 	// Front End
 	//
 	else if (name === 'HTML')
-		return (
-			<Html5 height={DIMENSION} width={DIMENSION} color={color || '#E34F26'} />
-		);
+		return styled(Html5)`
+			color: ${color || '#E34F26'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'CSS')
-		return (
-			<Css3 height={DIMENSION} width={DIMENSION} color={color || '#1572B6'} />
-		);
+		return styled(Css3)`
+			color: ${color || '#1572B6'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'SASS')
-		return (
-			<Sass height={DIMENSION} width={DIMENSION} color={color || '#CC6699'} />
-		);
+		return styled(Sass)`
+			color: ${color || '#CC6699'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'React')
-		return (
-			<ReactLogo
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#61DAFB'}
-			/>
-		);
+		return styled(ReactLogo)`
+			color: ${color || '#61DAFB'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Redux')
-		return (
-			<Redux height={DIMENSION} width={DIMENSION} color={color || '#764ABC'} />
-		);
+		return styled(Redux)`
+			color: ${color || '#764ABC'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Apollo Client')
-		return (
-			<Apollographql
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#311C87'}
-			/>
-		);
+		return styled(Apollographql)`
+			color: ${color || '#311C87'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'NextJS')
-		return (
-			<Nextdotjs
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#000000'}
-			/>
-		);
+		return styled(Nextdotjs)`
+			color: ${color || '#000000'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'React Native')
-		return (
-			<ReactLogo
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#61DAFB'}
-			/>
-		);
+		return styled(ReactLogo)`
+			color: ${color || '#61DAFB'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Expo')
-		return (
-			<Expo height={DIMENSION} width={DIMENSION} color={color || '#000020'} />
-		);
+		return styled(Expo)`
+			color: ${color || '#000020'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	//
 	// UI Libraries
 	//
 	else if (name === 'Bootstrap')
-		return (
-			<Bootstrap
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#7952B3'}
-			/>
-		);
+		return styled(Bootstrap)`
+			color: ${color || '#7952B3'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Material UI')
-		return (
-			<Materialui
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#0081CB'}
-			/>
-		);
+		return styled(Materialdesign)`
+			color: ${color || '#0081CB'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Tailwind CSS')
-		return (
-			<Tailwindcss
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#38B2AC'}
-			/>
-		);
+		return styled(Tailwindcss)`
+			color: ${color || '#38B2AC'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Chakra UI')
-		return (
-			<Chakraui
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#319795'}
-			/>
-		);
+		return styled(Chakraui)`
+			color: ${color || '#319795'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	//
 	// Backend
 	//
 	else if (name === 'NodeJS')
-		return (
-			<Nodedotjs
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#339933'}
-			/>
-		);
+		return styled(Nodedotjs)`
+			color: ${color || '#339933'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Express')
-		return (
-			<Express
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#000000'}
-			/>
-		);
+		return styled(Express)`
+			color: ${color || '#000000'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'GraphQL')
-		return (
-			<Graphql
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#E434AA'}
-			/>
-		);
+		return styled(Graphql)`
+			color: ${color || '#E10098'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	//
 	// Databases
 	//
 	else if (name === 'MySQL')
-		return (
-			<Mysql height={DIMENSION} width={DIMENSION} color={color || '#4479A1'} />
-		);
+		return styled(Mysql)`
+			color: ${color || '#4479A1'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'PostgreSQL')
-		return (
-			<Postgresql
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#4169E1'}
-			/>
-		);
+		return styled(Postgresql)`
+			color: ${color || '#336791'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'MongoDB')
-		return (
-			<Mongodb
-				height={DIMENSION}
-				width={DIMENSION}
-				color={color || '#47A248'}
-			/>
-		);
+		return styled(Mongodb)`
+			color: ${color || '#47A248'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Redis')
-		return (
-			<Redis height={DIMENSION} width={DIMENSION} color={color || '#DC382D'} />
-		);
+		return styled(Redis)`
+			color: ${color || '#DC382D'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	//
 	// Misc
 	//
 	else if (name === 'Git')
-		return (
-			<Git height={DIMENSION} width={DIMENSION} color={color || '#F05032'} />
-		);
+		return styled(Git)`
+			color: ${color || '#F05032'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else if (name === 'Docker')
-		return (
-			<Docker height={DIMENSION} width={DIMENSION} color={color || '#2496ED'} />
-		);
+		return styled(Docker)`
+			color: ${color || '#2496ED'};
+			height: ${DIMENSION};
+			width: ${DIMENSION};
+		`;
 	else return <div />;
 }
