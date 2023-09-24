@@ -13,25 +13,26 @@ const StyledLink = ({ address, title }: { address: string; title: string }) => {
 			: 'px-2 py-1 font-medium transition-all duration-300 rounded-lg text-background hover:bg-background hover:text-text';
 
 	return (
-		<li className='mx-2'>
-			<Link href={address}>
-				<a
-					className={anchorStyles}
-					style={
-						address === pathname
-							? {
-									border:
-										pathname === '/contact'
-											? '1px solid #112d4e'
-											: '1px solid #DBE2EF',
-							  }
-							: {}
-					}>
-					{title}
-				</a>
-			</Link>
+        <li className='mx-2'>
+			<Link
+                href={address}
+                className={anchorStyles}
+                style={
+                    address === pathname
+                        ? {
+                                border:
+                                    pathname === '/contact'
+                                        ? '1px solid #112d4e'
+                                        : '1px solid #DBE2EF',
+                          }
+                        : {}
+                }>
+
+                {title}
+
+            </Link>
 		</li>
-	);
+    );
 };
 
 export const webView = (
@@ -53,8 +54,10 @@ export default function Navbar() {
 	) : (
 		<header className={`absolute top-0 w-full bg-text`}>
 			<nav className='container flex items-center justify-between px-4 mx-auto'>
-				<Link href='/'>
-					<a className='py-1 text-2xl font-medium lg:py-0 font-title text-background'>{`Aditya Manikanth Rao`}</a>
+				<Link
+                    href='/'
+                    className='py-1 text-2xl font-medium lg:py-0 font-title text-background'>
+					{`Aditya Manikanth Rao`}
 				</Link>
 				<menu className='w-auto'>{webView}</menu>
 				<Hamburger

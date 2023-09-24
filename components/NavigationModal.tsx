@@ -7,14 +7,15 @@ const StyledLink = ({ address, title }: { address: string; title: string }) => {
 	const { closeModal } = useNavigationContext();
 
 	return (
-		<Link href={address}>
-			<a
-				onClick={closeModal}
-				className='p-1 my-2 text-2xl font-semibold transition-all duration-300 rounded-lg hover:bg-splash hover:text-background'>
-				{title}
-			</a>
-		</Link>
-	);
+        (<Link
+            href={address}
+            onClick={closeModal}
+            className='p-1 my-2 text-2xl font-semibold transition-all duration-300 rounded-lg hover:bg-splash hover:text-background'>
+
+            {title}
+
+        </Link>)
+    );
 };
 
 export default function NavigationModal() {

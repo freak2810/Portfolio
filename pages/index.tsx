@@ -6,13 +6,11 @@ import LandingPageProps from '../types/LandingPageProps';
 import About from '../components/About';
 
 export default function Home(props: LandingPageProps) {
-	console.log(props);
-
 	return (
 		<>
-			{/* <SEO /> */}
-			{/* <Landing name={props.name} roles={props.roles} links={props.links} /> */}
-			{/* <About about={props.about} image={props.image} /> */}
+			<SEO />
+			<Landing name={props.name} roles={props.roles} links={props.links} />
+			<About about={props.about} image={props.image} />
 		</>
 	);
 }
@@ -29,7 +27,7 @@ export async function getStaticProps() {
 			roles: data.LandingPage.roles,
 			links: data.LandingPage.socialLinks,
 			about: data.LandingPage.bioRaw,
-			image: data.LandingPage.profilePicture.asset,
+			image: data.LandingPage.profilePicture.asset.url,
 		},
 	};
 }

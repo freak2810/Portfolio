@@ -6,7 +6,7 @@ export interface LandingProps extends SocialLinks {
 }
 
 export interface AboutProps {
-	about: string;
+	about: any;
 	image: string;
 }
 

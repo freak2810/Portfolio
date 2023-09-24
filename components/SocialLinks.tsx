@@ -9,7 +9,8 @@ const Link = (link: SocialLinkProps) => {
 			title={link.username}
 			aria-roledescription='Link'
 			target='blank'
-			href={link.profileLink || `mailto:${link.username}`}>
+			href={link.profileLink || `mailto:${link.username}`}
+		>
 			<Icon name={link.socialProfile as SocialIcon} />
 		</a>
 	);
@@ -17,7 +18,7 @@ const Link = (link: SocialLinkProps) => {
 
 export default function SocialLinks({ links }: SocialLinksProps) {
 	return (
-		<div className='flex items-center justify-between w-10/12 my-5 sm:w-1/2 lg:w-1/3'>
+		<div className='flex items-center justify-between w-10/12 my-5 sm:w-1/2 lg:w-1/6'>
 			{links.map((link, index) => (
 				<Link key={index} {...link} />
 			))}

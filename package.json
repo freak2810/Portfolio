@@ -12,6 +12,8 @@
 	},
 	"dependencies": {
 		"@apollo/client": "^3.8.4",
+		"@icons-pack/react-simple-icons": "^9.0.0",
+		"@sanity/block-content-to-markdown": "^0.0.5",
 		"@sanity/image-url": "^1.0.2",
 		"@sanity/vision": "^3.16.7",
 		"@tippyjs/react": "^4.2.6",
