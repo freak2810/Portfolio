@@ -2,7 +2,8 @@ import ReactMarkdown from 'react-markdown';
 import { AboutProps } from '../types/LandingPageProps';
 // @ts-expect-error - No types available
 import toMarkdown from '@sanity/block-content-to-markdown';
-import Image from 'next/legacy/image';
+// import Image from 'next/legacy/image';
+import Image from 'next/image';
 
 export default function About({ about, image }: AboutProps) {
 	return (

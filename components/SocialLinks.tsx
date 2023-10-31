@@ -18,7 +18,7 @@ const Link = (link: SocialLinkProps) => {
 
 export default function SocialLinks({ links }: SocialLinksProps) {
 	return (
-		<div className='flex items-center justify-between w-10/12 my-5 sm:w-1/2 lg:w-1/6'>
+		<div className='flex items-center justify-between w-10/12 my-5 sm:w-1/2 lg:w-36'>
 			{links.map((link, index) => (
 				<Link key={index} {...link} />
 			))}
