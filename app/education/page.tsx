@@ -48,19 +48,4 @@ const getData = async () => {
 	return {
 		institutes: data.allEducationPage,
 	};
-
-	// const data = await client.request(
-	// 	GET_EDUCATION_PAGE_PROPS
-	// 	// variables: {
-	// 	// 	educationId: 'ckrxc4bpsc6th0d56wsbjt696',
-	// 	// 	employmentId: 'cks5gxjigb1q90b5854xkas8p',
-	// 	// },
-	// );
-
-	// console.log(data);
-
-	// // return {
-	// // 		institutes: data.educationDetail.educationInstitutes,
-	// // 		companies: data.companyDetail.companies,
-	// // };
 };

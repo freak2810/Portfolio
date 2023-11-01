@@ -44,8 +44,6 @@ export interface IconProps {
 export default function Icon({ name, color, size }: IconProps) {
 	const DIMENSION = size || '2.5rem';
 
-	console.log(name);
-
 	if (name === 'Gmail ID')
 		return (
 			<SiGmail
