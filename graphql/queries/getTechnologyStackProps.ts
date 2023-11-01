@@ -1,4 +1,4 @@
-import gql from 'graphql-tag';
+import { gql } from 'graphql-request';
 
 const GET_TECHNOLOGY_STACK_PROPS = gql`
 	query getTechnologyStackProps($id: ID!) {

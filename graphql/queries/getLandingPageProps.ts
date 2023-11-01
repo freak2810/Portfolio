@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from 'graphql-request';
 
 const GET_LANDING_PAGE_PROPS = gql`
 	query HomePage($landingPage: ID!) {

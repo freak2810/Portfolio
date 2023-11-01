@@ -1,7 +1,7 @@
 import SEO from '../components/SEO';
 import TechnologyIcon from '../components/TechnologyIcon';
-import { GET_TECHNOLOGY_STACK_PROPS } from '../apollo/queries';
-import client from '../apollo/client';
+import { GET_TECHNOLOGY_STACK_PROPS } from '../graphql/queries';
+import client from '../graphql/client';
 import TechnologyPageProps from '../types/TechnologyPageProps';
 
 export default function Technologies({ stacks }: TechnologyPageProps) {

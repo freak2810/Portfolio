@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
-import client from '../apollo/client';
-import GET_PROJECT_PAGE_PROPS from '../apollo/queries/getProjectsPageProps';
+import client from '../graphql/client';
+import GET_PROJECT_PAGE_PROPS from '../graphql/queries/getProjectsPageProps';
 import SEO from '../components/SEO';
 import ProjectPageProps from '../types/ProjectPageProps';
 import { Code } from '@styled-icons/fa-solid';
@@ -35,14 +35,16 @@ export default function Projects({ projects }: ProjectPageProps) {
 								<a
 									href={p.githubLink}
 									target='blank'
-									className='text-2xl font-medium transition-all duration-300 hover:text-splash'>
+									className='text-2xl font-medium transition-all duration-300 hover:text-splash'
+								>
 									{p.name}
 								</a>
 								<div className='flex flex-wrap my-2'>
 									{p.technologies.map(t => (
 										<p
 											key={t.name}
-											className='px-2 mb-2 mr-2 transition-shadow duration-300 border cursor-pointer rounded-xl hover:shadow-inner'>
+											className='px-2 mb-2 mr-2 transition-shadow duration-300 border cursor-pointer rounded-xl hover:shadow-inner'
+										>
 											{t.name}
 										</p>
 									))}
@@ -57,7 +59,8 @@ export default function Projects({ projects }: ProjectPageProps) {
 										<a
 											href={p.githubLink}
 											target='blank'
-											title='Checkout the code'>
+											title='Checkout the code'
+										>
 											<Code
 												className='mr-4 transition-all duration-300 hover:text-splash'
 												height={32}
@@ -70,7 +73,8 @@ export default function Projects({ projects }: ProjectPageProps) {
 										<a
 											href={p.deploymentUrl}
 											target='blank'
-											title='Checkout the Deployment'>
+											title='Checkout the Deployment'
+										>
 											<Web
 												className='transition-all duration-300 hover:text-splash'
 												height={32}

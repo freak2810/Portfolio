@@ -1,5 +1,5 @@
-import client from '../../apollo/client';
-import GET_EDUCATION_PAGE_PROPS from '../../apollo/queries/EDUCATION_PAGE_QUERY.ts';
+import client from '../../graphql/client';
+import GET_EDUCATION_PAGE_PROPS from '../../graphql/queries/EDUCATION_PAGE_QUERY.ts';
 
 export default function Education() {
 	return null;

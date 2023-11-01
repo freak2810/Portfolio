@@ -1,7 +1,7 @@
 import SEO from '../components/SEO';
 import Landing from '../components/Landing';
-import GET_LANDING_PAGE_PROPS from '../apollo/queries/getLandingPageProps';
-import client from '../apollo/client';
+import GET_LANDING_PAGE_PROPS from '../graphql/queries/getLandingPageProps';
+import client from '../graphql/client';
 import LandingPageProps from '../types/LandingPageProps';
 import About from '../components/About';
 

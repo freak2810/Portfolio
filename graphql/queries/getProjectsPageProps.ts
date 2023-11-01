@@ -1,4 +1,4 @@
-import gql from 'graphql-tag';
+import { gql } from 'graphql-request';
 
 const GET_PROJECT_PAGE_PROPS = gql`
 	query getProjectDetails($id: ID!) {
