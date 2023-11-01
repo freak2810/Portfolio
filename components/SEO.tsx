@@ -8,7 +8,7 @@ interface SEOProps {
 export const generateMetadata = (title?: string | null | undefined) => {
 	return {
 		title: title || `Aditya Manikanth Rao - Portfolio`,
-		viewport: 'width=device-width',
+		// viewport: 'width=device-width',
 		icons: ['logo.png'],
 		authors: [
 			{

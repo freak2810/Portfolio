@@ -4,7 +4,6 @@ export default defineType({
 	name: 'landingPage',
 	title: 'Landing Page',
 	type: 'document',
-
 	fields: [
 		defineField({
 			name: 'name',
@@ -73,7 +72,7 @@ export default defineType({
 	preview: {
 		select: {
 			title: 'name',
-			media: 'image',
+			media: 'profilePicture',
 		},
 	},
 });

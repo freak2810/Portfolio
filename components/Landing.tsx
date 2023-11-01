@@ -10,7 +10,7 @@ export default function Landing({ name, roles, links }: LandingProps) {
 			<h1 className='text-5xl font-medium text-center select-none font-title md:text-7xl lg:text-8xl'>
 				{name}
 			</h1>
-			<TypeWriterEffect roles={roles} />
+			{/* <TypeWriterEffect roles={roles} /> */}
 			<SocialLinks links={links} />
 		</main>
 	);

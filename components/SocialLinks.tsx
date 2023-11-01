@@ -1,8 +1,12 @@
+'use client';
+
 import { SocialIcon } from '../types/Icons';
 import SocialLinksProps, { SocialLinkProps } from '../types/SocialLinkProps';
 import Icon from './Icon';
 
 const Link = (link: SocialLinkProps) => {
+	console.log(link);
+
 	return (
 		<a
 			className='p-2 hover:bg-gray-100 hover:shadow rounded-2xl'

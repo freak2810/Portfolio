@@ -1,11 +1,14 @@
+'use client';
+
 import Link from 'next/link';
+// @ts-expect-error - no types
 import { Hamburger } from '@styled-icons/fa-solid';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import NavigationModal from './NavigationModal';
 import { useNavigationContext } from '../context/NavigationContext';
 
 const StyledLink = ({ address, title }: { address: string; title: string }) => {
-	const { pathname } = useRouter();
+	const pathname = usePathname();
 
 	const anchorStyles =
 		pathname === '/contact'
@@ -13,26 +16,25 @@ const StyledLink = ({ address, title }: { address: string; title: string }) => {
 			: 'px-2 py-1 font-medium transition-all duration-300 rounded-lg text-background hover:bg-background hover:text-text';
 
 	return (
-        <li className='mx-2'>
+		<li className='mx-2'>
 			<Link
-                href={address}
-                className={anchorStyles}
-                style={
-                    address === pathname
-                        ? {
-                                border:
-                                    pathname === '/contact'
-                                        ? '1px solid #112d4e'
-                                        : '1px solid #DBE2EF',
-                          }
-                        : {}
-                }>
-
-                {title}
-
-            </Link>
+				href={address}
+				className={anchorStyles}
+				style={
+					address === pathname
+						? {
+								border:
+									pathname === '/contact'
+										? '1px solid #112d4e'
+										: '1px solid #DBE2EF',
+						  }
+						: {}
+				}
+			>
+				{title}
+			</Link>
 		</li>
-    );
+	);
 };
 
 export const webView = (
@@ -46,28 +48,28 @@ export const webView = (
 );
 
 export default function Navbar() {
-	const { pathname } = useRouter();
-	const { openModal } = useNavigationContext();
+	const pathname = usePathname();
 
-	return pathname === '/contact' ? (
-		<></>
-	) : (
-		<header className={`absolute top-0 w-full bg-text`}>
-			<nav className='container flex items-center justify-between px-4 mx-auto'>
+	// const { openModal } = useNavigationContext();
+
+	return pathname && ['/contact', '/studio'].includes(pathname) ? null : (
+		<div className={`absolute top-0 w-full bg-text`}>
+			<div className='container flex items-center justify-between px-4 mx-auto'>
 				<Link
-                    href='/'
-                    className='py-1 text-2xl font-medium lg:py-0 font-title text-background'>
+					href='/'
+					className='py-1 text-2xl font-medium lg:py-0 font-title text-background'
+				>
 					{`Aditya Manikanth Rao`}
 				</Link>
 				<menu className='w-auto'>{webView}</menu>
 				<Hamburger
-					onClick={openModal}
+					// onClick={openModal}
 					className='my-1 transition-all duration-300 cursor-pointer hamburger-menu text-background hover:text-splash'
 					height={20}
 					width={20}
 				/>
-			</nav>
+			</div>
 			<NavigationModal />
-		</header>
+		</div>
 	);
 }
