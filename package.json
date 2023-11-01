@@ -8,7 +8,8 @@
 		"build": "next build",
 		"start": "next start",
 		"clean": "pnpx rimraf -f node-modules .next",
-		"clean-install": "pnpm run clean && yarn"
+		"clean-install": "pnpm run clean && pnpm install",
+		"codegen": "graphql-codegen -c ./graphql/codegen.ts"
 	},
 	"dependencies": {
 		"@icons-pack/react-simple-icons": "^9.1.0",
@@ -33,12 +34,16 @@
 		"typewriter-effect": "^2.21.0"
 	},
 	"devDependencies": {
+		"@graphql-codegen/cli": "^5.0.0",
+		"@graphql-codegen/typescript-graphql-request": "^6.0.1",
+		"@graphql-codegen/typescript-operations": "^4.0.1",
 		"@types/react": "18.2.33",
 		"@types/react-modal": "^3.16.2",
 		"@types/styled-components": "^5.1.29",
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.52.0",
 		"eslint-config-next": "^14.0.1",
+		"graphql-tag": "^2.12.6",
 		"postcss": "^8.4.31",
 		"tailwind": "^4.0.0",
 		"tailwindcss": "^2.2.19",

@@ -1,30 +1,18 @@
-import { gql } from 'graphql-request';
+import { gql } from 'graphql-tag';
 
 const GET_EDUCATION_PAGE_PROPS = gql`
-	query EducationPage($educationId: ID!, $employmentId: ID!) {
-	# 	companyDetail(where: { id: $employmentId }) {
-	# 		companies {
-	# 			id
-	# 			role
-	# 			name
-	# 			duration
-	# 			jobType
-	# 			achievements
-	# 		}
-	# 	}
-
-	# 	educationDetail(where: { id: $educationId }) {
-	# 		educationInstitutes {
-	# 			id
-	# 			instituteName
-	# 			caption
-	# 			courseName
-	# 			duration
-	# 			location
-	# 			marksPercentage
-	# 			description
-	# 		}
-	# 	}
+	query EducationPage {
+		allEducationPage {
+			_id
+			scores
+			location
+			achievements
+			__typename
+			course
+			institute
+			affiliation
+			period
+		}
 	}
 `;
 
