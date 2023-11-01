@@ -8,6 +8,9 @@ dependencies:
   '@icons-pack/react-simple-icons':
     specifier: ^9.1.0
     version: 9.1.0(react@18.2.0)
+  '@portabletext/react':
+    specifier: ^3.0.11
+    version: 3.0.11(react@18.2.0)
   '@sanity/block-content-to-markdown':
     specifier: ^0.0.5
     version: 0.0.5

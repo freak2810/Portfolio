@@ -188,6 +188,54 @@ export type EducationPageSorting = {
   scores?: InputMaybe<SortOrder>;
 };
 
+export type ExperiencePage = Document & {
+  __typename?: 'ExperiencePage';
+  /** Date the document was created */
+  _createdAt?: Maybe<Scalars['DateTime']['output']>;
+  /** Document ID */
+  _id?: Maybe<Scalars['ID']['output']>;
+  _key?: Maybe<Scalars['String']['output']>;
+  /** Current document revision */
+  _rev?: Maybe<Scalars['String']['output']>;
+  /** Document type */
+  _type?: Maybe<Scalars['String']['output']>;
+  /** Date the document was last modified */
+  _updatedAt?: Maybe<Scalars['DateTime']['output']>;
+  company?: Maybe<Scalars['String']['output']>;
+  period?: Maybe<Scalars['String']['output']>;
+  responsibilitiesRaw?: Maybe<Scalars['JSON']['output']>;
+  role?: Maybe<Scalars['String']['output']>;
+  type?: Maybe<Scalars['String']['output']>;
+};
+
+export type ExperiencePageFilter = {
+  /** Apply filters on document level */
+  _?: InputMaybe<Sanity_DocumentFilter>;
+  _createdAt?: InputMaybe<DatetimeFilter>;
+  _id?: InputMaybe<IdFilter>;
+  _key?: InputMaybe<StringFilter>;
+  _rev?: InputMaybe<StringFilter>;
+  _type?: InputMaybe<StringFilter>;
+  _updatedAt?: InputMaybe<DatetimeFilter>;
+  company?: InputMaybe<StringFilter>;
+  period?: InputMaybe<StringFilter>;
+  role?: InputMaybe<StringFilter>;
+  type?: InputMaybe<StringFilter>;
+};
+
+export type ExperiencePageSorting = {
+  _createdAt?: InputMaybe<SortOrder>;
+  _id?: InputMaybe<SortOrder>;
+  _key?: InputMaybe<SortOrder>;
+  _rev?: InputMaybe<SortOrder>;
+  _type?: InputMaybe<SortOrder>;
+  _updatedAt?: InputMaybe<SortOrder>;
+  company?: InputMaybe<SortOrder>;
+  period?: InputMaybe<SortOrder>;
+  role?: InputMaybe<SortOrder>;
+  type?: InputMaybe<SortOrder>;
+};
+
 export type File = {
   __typename?: 'File';
   _key?: Maybe<Scalars['String']['output']>;
@@ -373,11 +421,13 @@ export type RootQuery = {
   __typename?: 'RootQuery';
   Document?: Maybe<Document>;
   EducationPage?: Maybe<EducationPage>;
+  ExperiencePage?: Maybe<ExperiencePage>;
   LandingPage?: Maybe<LandingPage>;
   SanityFileAsset?: Maybe<SanityFileAsset>;
   SanityImageAsset?: Maybe<SanityImageAsset>;
   allDocument: Array<Document>;
   allEducationPage: Array<EducationPage>;
+  allExperiencePage: Array<ExperiencePage>;
   allLandingPage: Array<LandingPage>;
   allSanityFileAsset: Array<SanityFileAsset>;
   allSanityImageAsset: Array<SanityImageAsset>;
@@ -390,6 +440,11 @@ export type RootQueryDocumentArgs = {
 
 
 export type RootQueryEducationPageArgs = {
+  id: Scalars['ID']['input'];
+};
+
+
+export type RootQueryExperiencePageArgs = {
   id: Scalars['ID']['input'];
 };
 
@@ -422,6 +477,14 @@ export type RootQueryAllEducationPageArgs = {
   offset?: InputMaybe<Scalars['Int']['input']>;
   sort?: InputMaybe<Array<EducationPageSorting>>;
   where?: InputMaybe<EducationPageFilter>;
+};
+
+
+export type RootQueryAllExperiencePageArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  sort?: InputMaybe<Array<ExperiencePageSorting>>;
+  where?: InputMaybe<ExperiencePageFilter>;
 };
 
 
@@ -873,7 +936,7 @@ export type StringFilter = {
 export type EducationPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type EducationPageQuery = { __typename?: 'RootQuery', allEducationPage: Array<{ __typename: 'EducationPage', _id?: string | null, scores?: string | null, location?: string | null, achievements?: Array<string | null> | null, course?: string | null, institute?: string | null, affiliation?: string | null, period?: string | null }> };
+export type EducationPageQuery = { __typename?: 'RootQuery', allEducationPage: Array<{ __typename: 'EducationPage', _id?: string | null, scores?: string | null, location?: string | null, achievements?: Array<string | null> | null, course?: string | null, institute?: string | null, affiliation?: string | null, period?: string | null }>, allExperiencePage: Array<{ __typename: 'ExperiencePage', _id?: string | null, responsibilitiesRaw?: any | null, company?: string | null, role?: string | null, type?: string | null, period?: string | null }> };
 
 export type HomePageQueryVariables = Exact<{
   landingPage: Scalars['ID']['input'];
@@ -894,6 +957,15 @@ export const EducationPageDocument = gql`
     course
     institute
     affiliation
+    period
+  }
+  allExperiencePage {
+    _id
+    responsibilitiesRaw
+    __typename
+    company
+    role
+    type
     period
   }
 }

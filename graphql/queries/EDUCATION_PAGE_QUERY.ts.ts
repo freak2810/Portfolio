@@ -13,6 +13,15 @@ const GET_EDUCATION_PAGE_PROPS = gql`
 			affiliation
 			period
 		}
+		allExperiencePage {
+			_id
+			responsibilitiesRaw
+			__typename
+			company
+			role
+			type
+			period
+		}
 	}
 `;
 

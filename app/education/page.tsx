@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown';
+import { PortableText } from '@portabletext/react';
 import { generateMetadata } from '../../components/SEO';
 import sdk from '../../graphql/client';
 
@@ -7,10 +7,33 @@ export const metadata = generateMetadata(
 );
 
 const Education = async () => {
-	const { institutes } = await getData();
+	const { institutes, companies } = await getData();
 
 	return (
 		<section className='container px-4 mx-auto mt-20 lg:max-w-7xl'>
+			<h1 className='mb-4 text-5xl font-semibold text-center md:text-6xl'>
+				Experience
+			</h1>
+			<div className='flex flex-col items-center my-4 mb-16'>
+				{companies.map(c => (
+					<div className='w-full my-4 lg:w-8/12' key={c._id}>
+						<h1 className='my-2 text-4xl font-semibold'>{c.role}</h1>
+						<h2 className='mt-2 text-2xl font-semibold'>{c.company}</h2>
+						<h4 className='font-semibold'>{c.type}</h4>
+						<h3 className='mb-2'>{c.period}</h3>
+						{c.responsibilitiesRaw && (
+							<PortableText
+								value={c.responsibilitiesRaw}
+								components={{
+									list: ({ children }) => (
+										<ul className='ml-4 list-disc'>{children}</ul>
+									),
+								}}
+							/>
+						)}
+					</div>
+				))}
+			</div>
 			<h1 className='mb-4 text-5xl font-semibold text-center md:text-6xl'>
 				Education
 			</h1>
@@ -47,5 +70,6 @@ const getData = async () => {
 
 	return {
 		institutes: data.allEducationPage,
+		companies: data.allExperiencePage,
 	};
 };
