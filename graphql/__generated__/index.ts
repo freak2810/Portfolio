@@ -425,12 +425,14 @@ export type RootQuery = {
   LandingPage?: Maybe<LandingPage>;
   SanityFileAsset?: Maybe<SanityFileAsset>;
   SanityImageAsset?: Maybe<SanityImageAsset>;
+  TechnologyPage?: Maybe<TechnologyPage>;
   allDocument: Array<Document>;
   allEducationPage: Array<EducationPage>;
   allExperiencePage: Array<ExperiencePage>;
   allLandingPage: Array<LandingPage>;
   allSanityFileAsset: Array<SanityFileAsset>;
   allSanityImageAsset: Array<SanityImageAsset>;
+  allTechnologyPage: Array<TechnologyPage>;
 };
 
 
@@ -460,6 +462,11 @@ export type RootQuerySanityFileAssetArgs = {
 
 
 export type RootQuerySanityImageAssetArgs = {
+  id: Scalars['ID']['input'];
+};
+
+
+export type RootQueryTechnologyPageArgs = {
   id: Scalars['ID']['input'];
 };
 
@@ -509,6 +516,14 @@ export type RootQueryAllSanityImageAssetArgs = {
   offset?: InputMaybe<Scalars['Int']['input']>;
   sort?: InputMaybe<Array<SanityImageAssetSorting>>;
   where?: InputMaybe<SanityImageAssetFilter>;
+};
+
+
+export type RootQueryAllTechnologyPageArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  sort?: InputMaybe<Array<TechnologyPageSorting>>;
+  where?: InputMaybe<TechnologyPageFilter>;
 };
 
 export type SanityAssetSourceData = {
@@ -933,6 +948,45 @@ export type StringFilter = {
   nin?: InputMaybe<Array<Scalars['String']['input']>>;
 };
 
+export type TechnologyPage = Document & {
+  __typename?: 'TechnologyPage';
+  /** Date the document was created */
+  _createdAt?: Maybe<Scalars['DateTime']['output']>;
+  /** Document ID */
+  _id?: Maybe<Scalars['ID']['output']>;
+  _key?: Maybe<Scalars['String']['output']>;
+  /** Current document revision */
+  _rev?: Maybe<Scalars['String']['output']>;
+  /** Document type */
+  _type?: Maybe<Scalars['String']['output']>;
+  /** Date the document was last modified */
+  _updatedAt?: Maybe<Scalars['DateTime']['output']>;
+  technologies?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+  type?: Maybe<Scalars['String']['output']>;
+};
+
+export type TechnologyPageFilter = {
+  /** Apply filters on document level */
+  _?: InputMaybe<Sanity_DocumentFilter>;
+  _createdAt?: InputMaybe<DatetimeFilter>;
+  _id?: InputMaybe<IdFilter>;
+  _key?: InputMaybe<StringFilter>;
+  _rev?: InputMaybe<StringFilter>;
+  _type?: InputMaybe<StringFilter>;
+  _updatedAt?: InputMaybe<DatetimeFilter>;
+  type?: InputMaybe<StringFilter>;
+};
+
+export type TechnologyPageSorting = {
+  _createdAt?: InputMaybe<SortOrder>;
+  _id?: InputMaybe<SortOrder>;
+  _key?: InputMaybe<SortOrder>;
+  _rev?: InputMaybe<SortOrder>;
+  _type?: InputMaybe<SortOrder>;
+  _updatedAt?: InputMaybe<SortOrder>;
+  type?: InputMaybe<SortOrder>;
+};
+
 export type EducationPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -944,6 +998,11 @@ export type HomePageQueryVariables = Exact<{
 
 
 export type HomePageQuery = { __typename?: 'RootQuery', LandingPage?: { __typename?: 'LandingPage', _id?: string | null, roles?: Array<string | null> | null, name?: string | null, bioRaw?: any | null, socialLinks?: Array<{ __typename?: 'Link', username?: string | null, profileLink?: string | null, socialProfile?: string | null } | null> | null, profilePicture?: { __typename?: 'Image', asset?: { __typename?: 'SanityImageAsset', url?: string | null } | null } | null } | null };
+
+export type TechnologyPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type TechnologyPageQuery = { __typename?: 'RootQuery', allTechnologyPage: Array<{ __typename?: 'TechnologyPage', _id?: string | null, type?: string | null, technologies?: Array<string | null> | null }> };
 
 
 export const EducationPageDocument = gql`
@@ -990,6 +1049,15 @@ export const HomePageDocument = gql`
   }
 }
     `;
+export const TechnologyPageDocument = gql`
+    query TechnologyPage {
+  allTechnologyPage {
+    _id
+    type
+    technologies
+  }
+}
+    `;
 
 export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, string>) => Promise<T>, operationName: string, operationType?: string) => Promise<T>;
 
@@ -1003,6 +1071,9 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
     },
     HomePage(variables: HomePageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<HomePageQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<HomePageQuery>(HomePageDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'HomePage', 'query');
+    },
+    TechnologyPage(variables?: TechnologyPageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<TechnologyPageQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<TechnologyPageQuery>(TechnologyPageDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'TechnologyPage', 'query');
     }
   };
 }
