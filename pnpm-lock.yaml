@@ -17,6 +17,12 @@ dependencies:
   '@sanity/vision':
     specifier: ^3.19.0
     version: 3.19.0(@babel/runtime@7.23.2)(@codemirror/lint@6.4.2)(@codemirror/state@6.3.1)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.1.0)(codemirror@6.0.1)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@5.3.11)
+  '@styled-icons/fa-solid':
+    specifier: ^10.47.0
+    version: 10.47.0(react@18.2.0)(styled-components@5.3.11)
+  '@styled-icons/material-twotone':
+    specifier: ^10.47.0
+    version: 10.47.0(react@18.2.0)(styled-components@5.3.11)
   emailjs-com:
     specifier: ^3.2.0
     version: 3.2.0
@@ -50,9 +56,6 @@ dependencies:
   styled-components:
     specifier: ^5.3.11
     version: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-  styled-icons:
-    specifier: ^10.47.0
-    version: 10.47.0(react@18.2.0)(styled-components@5.3.11)
 
 devDependencies:
   '@graphql-codegen/cli':
@@ -70,9 +73,6 @@ devDependencies:
   '@types/react-modal':
     specifier: ^3.16.2
     version: 3.16.2
-  '@types/styled-components':
-    specifier: ^5.1.29
-    version: 5.1.29
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
@@ -2576,308 +2576,8 @@ packages:
       base64url: 3.0.1
     dev: false
 
-  /@styled-icons/bootstrap@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-xpnPdrLhAhpTRE4iljQIEK73twVj7VPglwHSL+8nQdH7EsW5RJIOWsmlkZMyqhQHN0H7fGmT10F3/6OQhSpfGg==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/boxicons-logos@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-eDZfiTjBth4MsCX83ZfiWIoYGU494NxZgAxyf7S0ky2ZRsJnq/Cs7crH4hKWUTaLvCo0XRJmLeA3Us2tZFiItg==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/boxicons-regular@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-z8KczDp4VArXvOn8i2j66Xs4oX9oiiJEhMoHydY3uC9kdtImcxhZ/xHPrgTJLkbK6f5ikwB4CKVnSqQGzzAJNw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/boxicons-solid@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-M795TXYtSJCpfr+ukHZfH9mA0j5MPlB5vwRCnU3O+dojAYla/zoaSashjhUbmlgzKNwALWNfzOqicSCAzU2fhg==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/crypto@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-2hSOo1yb3ZEEOJAv9OBZLf3KQ8ujJrLw1uVDINJa7zLGuSfEWawnlkv/T2B0zQkOm0Hb6gikTRTAkLr4gyIS4Q==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/entypo-social@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-DWbUK7JkuAu4TPIBeeYfxys3cP8M4/q/XG2JVruDHa18viCEcDR1JXfn1p3TVYZCvlciKev+Vr1yrgcamTwVkg==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/entypo@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-0ChIqx3EMlMeout4Aa5AwEYtKsgTqrY/NnVQGvhlGfMYq9mC7jq7JuaKvt5SJ9/0cEnVhgW5zwAe4LeyrsJl5g==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/evaicons-outline@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-+tHb/Ir6G1e+rSJ2YKgm2vzjF80JoXWEmoC48exFrQEKQkJPSWtsqKdROkfANKrY9AFnRKhJQ+9fHhnjS+V/OA==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/evaicons-solid@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-tRw2/TkmRNV4N2badKPFnnRy+WbVtUkrloNo94CgF5rpxoL0eK+ki3OYZYqbl0T66bJ07hqduqTc3rbxvT/vfw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/evil@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-r1g2jZmz84XGLgJbAPkMDmuToUF+KyNWkS6GNoP+ygzriNgzgoHkcEvIb/bx/I2/UUHeotRMOknvhvh5C2CwFg==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/fa-brands@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-w+G31+61nBnjxzCwMs+H9rNm9jl+HhtRgZYvNd+2NKQn1dRbHbBVXzQEHCOL6hksvkDbIa0iPrenqMU6pB+wZQ==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/fa-regular@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-UL/MwhwlJ5SbcioI+UBR8KocYt6i+20akKn1ZNj0Pjgm2kv2odEJSWWkHCxh8J7T7s0q/Wvs3CMsBTMrKdKDpQ==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
   /@styled-icons/fa-solid@10.47.0(react@18.2.0)(styled-components@5.3.11):
     resolution: {integrity: sha512-8AJjbOAkvPlB/ypFzWo++CZxRDlFQfvWQSjWzVU/v/4kjGRWIiVB+rJrTB7joDUd5Oas/se4cSiDkSA+XR/Fqg==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/feather@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-w6F3s1B4DaQGLr4AZZ0PffZQOnPSRqr3npHoTvk4Juz4uTjw9/oHolcrTxPyJas9gXAV1kCLbeiaxTR6JVxJPw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/fluentui-system-filled@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-jAO8bs9SY/5Xu2vxg5sJmnD5YA966G2m2qU4ezlDbLDIXSaX/1qUBUivBFSWCDn4q5rslegzD1rhc9FncgPbSw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/fluentui-system-regular@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-x1TmxKS6mpX+QJw8ismT3rNa6TPvKYftmQRy57LbdNE9L5FkyWldrumPboZGKWi/oNiBn6SBelPeqv8LPFXNHQ==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/foundation@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-RZqNVxStjvboGg6+X1By9pE0j7FuzUkfgbu9SgOkSzMrHTvnTOu0JiQ7nNw+CY46rXhT8JTwRCgk2OLTk+anGA==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/heroicons-outline@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-C7bcJ/YPVKACoQLSBDM9DkgmrO1HmqAaru9kqYK2V+GaGUW5raf6dyTLo7GUYt/CJ7p3qWxsBz3SX6djzdaODQ==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/heroicons-solid@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-j+tJx2NzLG2tc91IXJVwKNjsI/osxmak+wmLfnfBsB+49srpxMYjuLPMtl9ZY/xgbNsWO36O+/N5Zf5bkgiKcQ==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/icomoon@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-3KcTTuswDrC03byyr9G9v5aWDTrhO6PbbN5O7CtU4/NXY4AaOkTQ8GUfvRjZ8yG/aEYRH4VYkWFpYu1CdsZxNg==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/ionicons-outline@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-BEFEBGQDhPssEshbHyrsAXbEb7hNsrsHa0Zh0zLlfCIB3Vxc2GrQU9Qibto443ZRVw5qgF7iBdSwQHiwY8dQJw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/ionicons-sharp@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-ZMkS+zBe04odi/4llkKMZkNEz8K3whta7Chzk81vvCTtR7jMnGEyw+tMUZbARliOOyaELBeTbgeUwNRNTibiSA==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/ionicons-solid@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-agiuzQzqrrRWHrGfswC6EciKVjt/XSZuQFbvP/s6qU2oYkQuJRdhmAZQldTaj9Xb2GyAmEjM0cmkWG3+JzV7CQ==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/material-outlined@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-/QeDSGXlfRoIsgx4g4Hb//xhsucD4mJJsNPk/e1XzckxkNG+YHCIjbAHzDwxwNfSCJYcTDcOp2SZcoS7iyNGlw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/material-rounded@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-+ByhDd1FJept3k8iBDxMWSzmIh29UrgZTIzh2pADWldGrsD/2JKdsC7knQghSj9uCevHNMKEeVaYBQMLoNUjvw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/material-sharp@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-U9bjvur/vawfiBhE75efNOF4WkSAygn26bQvHFJPc71ZCisvgJncnlSmR0rUgWnu7Cp/qg6faDH5CKDXBmGWCA==}
     peerDependencies:
       react: '*'
       styled-components: '*'
@@ -2900,90 +2600,6 @@ packages:
       styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     dev: false
 
-  /@styled-icons/material@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-6fwoLPHg3P9O/iXSblQ67mchgURJvhU7mfba29ICfpg62zJ/loEalUgspm1GGtYVSPtkejshVWUtV99dXpcQfg==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/octicons@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-JOqEbwbh23u/AdaINod8ZeVN5MEcOvkSeMTwGIPaPgz5PNuWRj/+1LpixmBeZjAr/WhB0pxZBBwA+e91BelQCA==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/open-iconic@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-v7wrHcUACQeSfJrLan/jXxgz7RSlJJXSc2u33UR82ewkOSBhaXp/zZxKF1tFCT2spvth0NBl6OkZUCw9ctgyrA==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/remix-editor@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-oOrt6wj5//4LrZkm40bXcsFpTgXbdOkixu6RHuE3O82+Hqtw1bYR/smm5MbLOJ+Kz62SEjDF3sxqFO23ITDeUQ==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/remix-fill@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-D2rWGJ9/7BR+3TMvmIoWGASMfyhWT4lTF+we8h9Pya5Ye+69cftvp817DMuaR/6czCugXTrB++HTQX0XJfoBFw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/remix-line@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-TkbtXdgcuM7VpE/51k8+sxfReFjSQpAFVnjJi8/gxwcTzjdOG7Plkgsaixi2+hiLk/Coj/+67KbntBoSevROsw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/simple-icons@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-zHkbGqAqFOwpqDjbhKTKsAXNxtBOXb7Ot2eKoDaDFckJGr2shAXRchclUS6wSixSPwQIPGAUcdO7Cq744Ollng==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
   /@styled-icons/styled-icon@10.7.0(react@18.2.0)(styled-components@5.3.11):
     resolution: {integrity: sha512-SCrhCfRyoY8DY7gUkpz+B0RqUg/n1Zaqrr2+YKmK/AyeNfCcoHuP4R9N4H0p/NA1l7PTU10ZkAWSLi68phnAjw==}
     peerDependencies:
@@ -2991,30 +2607,6 @@ packages:
       styled-components: '>=4.1.0 <6'
     dependencies:
       '@babel/runtime': 7.23.2
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/typicons@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-yCJnVggGsbxOyuIPEmD+9IYRvB5w41hpJKdpI0ErasYG9Izt/lGqUaaDaxR39u9s28Q54Fq/v+Ni17dFCs8FOw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@styled-icons/zondicons@10.46.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-DUlww6TeFsFjHD/1qd+DtMutm44r3ssOYtPiMJrOVolX1NqdW6XzrJ5dTbVCA2s7Ucd+Vp25cWfXnLcJBfas3w==}
-    peerDependencies:
-      react: '*'
-      styled-components: '*'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
       react: 18.2.0
       styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     dev: false
@@ -3092,13 +2684,6 @@ packages:
     dependencies:
       '@types/unist': 2.0.9
     dev: false
-
-  /@types/hoist-non-react-statics@3.3.4:
-    resolution: {integrity: sha512-ZchYkbieA+7tnxwX/SCBySx9WwvWR8TaP5tb2jRAzwvLb/rWchGw3v0w3pqUbUvj0GCwW2Xz/AVPSk6kUGctXQ==}
-    dependencies:
-      '@types/react': 17.0.6
-      hoist-non-react-statics: 3.3.2
-    dev: true
 
   /@types/is-hotkey@0.1.8:
     resolution: {integrity: sha512-4zW6OgrfVWR14IqHt32L5zpsE5IJgAu9uimQmAOFPdKPdv+M5RgXeoB2UCJZSKvVNGzUdLgbKdtCSZ66N2HdTA==}
@@ -3182,14 +2767,6 @@ packages:
   /@types/speakingurl@13.0.5:
     resolution: {integrity: sha512-s9UP9hXGcm2/WILA9hOecD8JavXdh9x1SguO21hF6ok8/pbrIIdGFnf4jmjLe+TQFiBiW2g3FxbiUVwdSpvkIg==}
     dev: false
-
-  /@types/styled-components@5.1.29:
-    resolution: {integrity: sha512-5h/ah9PAblggQ6Laa4peplT4iY5ddA8qM1LMD4HzwToUWs3hftfy0fayeRgbtH1JZUdw5CCaowmz7Lnb8SjIxQ==}
-    dependencies:
-      '@types/hoist-non-react-statics': 3.3.4
-      '@types/react': 17.0.6
-      csstype: 3.1.2
-    dev: true
 
   /@types/unist@2.0.9:
     resolution: {integrity: sha512-zC0iXxAv1C1ERURduJueYzkzZ2zaGyc+P2c95hgkikHPr3z8EdUZOlgEQ5X0DRmwDZn+hekycQnoeiiRVrmilQ==}
@@ -6101,6 +5678,7 @@ packages:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
     dependencies:
       react-is: 16.13.1
+    dev: false
 
   /hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
@@ -9005,54 +8583,6 @@ packages:
       supports-color: 5.5.0
     transitivePeerDependencies:
       - '@babel/core'
-    dev: false
-
-  /styled-icons@10.47.0(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-tMdhM1kB8qJEf1TLrZrPiVqfODEe4JjbqTJ5mGAyJOCnqC3BvqGwL5q30xuWeU2gqGPwyFfgrQM9nupka55IGw==}
-    peerDependencies:
-      react: '*'
-      styled-components: '>=4.1.0 <6'
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@styled-icons/bootstrap': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/boxicons-logos': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/boxicons-regular': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/boxicons-solid': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/crypto': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/entypo': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/entypo-social': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/evaicons-outline': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/evaicons-solid': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/evil': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/fa-brands': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/fa-regular': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/fa-solid': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/feather': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/fluentui-system-filled': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/fluentui-system-regular': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/foundation': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/heroicons-outline': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/heroicons-solid': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/icomoon': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/ionicons-outline': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/ionicons-sharp': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/ionicons-solid': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/material': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/material-outlined': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/material-rounded': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/material-sharp': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/material-twotone': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/octicons': 10.47.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/open-iconic': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/remix-editor': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/remix-fill': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/remix-line': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/simple-icons': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/styled-icon': 10.7.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/typicons': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      '@styled-icons/zondicons': 10.46.0(react@18.2.0)(styled-components@5.3.11)
-      react: 18.2.0
-      styled-components: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     dev: false
 
   /styled-jsx@5.1.1(@babel/core@7.23.2)(react@18.2.0):

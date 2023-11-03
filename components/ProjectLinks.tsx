@@ -1,8 +1,6 @@
 'use client';
 
-// @ts-expect-error - no types
 import { Code } from '@styled-icons/fa-solid';
-// @ts-expect-error - no types
 import { Web } from '@styled-icons/material-twotone';
 
 const ProjectLinks = (props: {

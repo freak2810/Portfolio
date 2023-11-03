@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-// @ts-expect-error - no types
-import { Hamburger } from '@styled-icons/fa-solid';
+import { Burger } from '@styled-icons/fa-solid';
 import { usePathname } from 'next/navigation';
 import NavigationModal from './NavigationModal';
+import { useNavigationContext } from '../context/NavigationContext';
 
 const StyledLink = ({ address, title }: { address: string; title: string }) => {
 	const pathname = usePathname();
@@ -49,7 +49,7 @@ export const webView = (
 export default function Navbar() {
 	const pathname = usePathname();
 
-	// const { openModal } = useNavigationContext();
+	const { openModal } = useNavigationContext();
 
 	return pathname && ['/contact', '/studio'].includes(pathname) ? null : (
 		<div className={`absolute top-0 w-full bg-text`}>
@@ -61,11 +61,11 @@ export default function Navbar() {
 					{`Aditya Manikanth Rao`}
 				</Link>
 				<menu className='w-auto'>{webView}</menu>
-				<Hamburger
-					// onClick={openModal}
-					className='my-1 transition-all duration-300 cursor-pointer hamburger-menu text-background hover:text-splash'
-					height={20}
-					width={20}
+				<Burger
+					className='transition-all duration-300 cursor-pointer text-background hamburger-menu hover:text-splash'
+					onClick={openModal}
+					height={24}
+					width={24}
 				/>
 			</div>
 			<NavigationModal />

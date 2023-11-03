@@ -14,7 +14,7 @@ export default function TypeWriterEffect({ roles }: Roles) {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setIndex(index => (index + 1) % (roles?.length || 0));
-		}, 3850);
+		}, 3800);
 
 		return () => clearInterval(interval);
 	}, []);

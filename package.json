@@ -18,6 +18,8 @@
 		"@portabletext/react": "^3.0.11",
 		"@sanity/image-url": "^1.0.2",
 		"@sanity/vision": "^3.19.0",
+		"@styled-icons/fa-solid": "^10.47.0",
+		"@styled-icons/material-twotone": "^10.47.0",
 		"emailjs-com": "^3.2.0",
 		"graphql-request": "^6.1.0",
 		"graphql-tag": "^2.12.6",
@@ -28,8 +30,7 @@
 		"react-modal": "^3.16.1",
 		"sanity": "^3.19.0",
 		"sass": "^1.69.5",
-		"styled-components": "^5.3.11",
-		"styled-icons": "^10.47.0"
+		"styled-components": "^5.3.11"
 	},
 	"devDependencies": {
 		"@graphql-codegen/cli": "^5.0.0",
@@ -37,7 +38,6 @@
 		"@graphql-codegen/typescript-operations": "^4.0.1",
 		"@types/react": "18.2.33",
 		"@types/react-modal": "^3.16.2",
-		"@types/styled-components": "^5.1.29",
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.52.0",
 		"eslint-config-next": "^14.0.1",

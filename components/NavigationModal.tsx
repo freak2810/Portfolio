@@ -1,8 +1,7 @@
-// @ts-nocheck
+'use client';
 
 import Modal from 'react-modal';
 import Link from 'next/link';
-// @ts-expect-error - no types
 import { Times } from '@styled-icons/fa-solid';
 import { useNavigationContext } from '../context/NavigationContext';
 
@@ -24,6 +23,7 @@ export default function NavigationModal() {
 	const { isOpen, openModal, closeModal } = useNavigationContext();
 
 	return (
+		// @ts-expect-error
 		<Modal
 			isOpen={isOpen}
 			shouldCloseOnEsc
