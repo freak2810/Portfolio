@@ -7,6 +7,8 @@
 		"lint": "next lint",
 		"build": "next build",
 		"start": "next start",
+		"web:deploy": "vercel build && vercel deploy --prebuilt",
+		"sanity:deploy": "sanity graphql deploy prod",
 		"clean": "pnpx rimraf node-modules .next .vercel",
 		"clean-install": "pnpm run clean && pnpm install",
 		"codegen": "graphql-codegen -c ./graphql/codegen.ts"
