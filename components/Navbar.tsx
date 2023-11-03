@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Hamburger } from '@styled-icons/fa-solid';
 import { usePathname } from 'next/navigation';
 import NavigationModal from './NavigationModal';
-import { useNavigationContext } from '../context/NavigationContext';
 
 const StyledLink = ({ address, title }: { address: string; title: string }) => {
 	const pathname = usePathname();

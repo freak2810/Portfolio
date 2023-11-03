@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import { generateMetadata } from '../components/SEO';
 import '../styles/globals.scss';
 
-export const metadata = generateMetadata();
+// export const metadata = generateMetadata();
 
 export default function RootLayout({
 	children,
@@ -11,10 +11,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<>
-			<Navbar />
-			<body>{children}</body>
-			<Footer />
-		</>
+		<html lang='en'>
+			<body>
+				<Navbar />
+				{children}
+				<Footer />
+			</body>
+		</html>
 	);
 }
