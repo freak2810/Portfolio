@@ -1,38 +1,33 @@
 {
 	"name": "portfolio-v2",
-	"version": "0.1.0",
+	"version": "1.2.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"lint": "next lint",
 		"build": "next build",
 		"start": "next start",
-		"clean": "pnpx rimraf -f node-modules .next",
+		"clean": "pnpx rimraf node-modules .next .vercel",
 		"clean-install": "pnpm run clean && pnpm install",
 		"codegen": "graphql-codegen -c ./graphql/codegen.ts"
 	},
 	"dependencies": {
 		"@icons-pack/react-simple-icons": "^9.1.0",
 		"@portabletext/react": "^3.0.11",
-		"@sanity/block-content-to-markdown": "^0.0.5",
 		"@sanity/image-url": "^1.0.2",
 		"@sanity/vision": "^3.19.0",
-		"@tippyjs/react": "^4.2.6",
 		"emailjs-com": "^3.2.0",
-		"graphql": "^16.8.1",
 		"graphql-request": "^6.1.0",
+		"graphql-tag": "^2.12.6",
 		"next": "^14.0.1",
 		"next-sanity": "^5.5.10",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-markdown": "^6.0.3",
 		"react-modal": "^3.16.1",
 		"sanity": "^3.19.0",
 		"sass": "^1.69.5",
 		"styled-components": "^5.3.11",
-		"styled-icons": "^10.47.0",
-		"typed.js": "^2.0.16",
-		"typewriter-effect": "^2.21.0"
+		"styled-icons": "^10.47.0"
 	},
 	"devDependencies": {
 		"@graphql-codegen/cli": "^5.0.0",
@@ -44,10 +39,12 @@
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.52.0",
 		"eslint-config-next": "^14.0.1",
-		"graphql-tag": "^2.12.6",
 		"postcss": "^8.4.31",
 		"tailwind": "^4.0.0",
 		"tailwindcss": "^2.2.19",
 		"typescript": "5.2.2"
+	},
+	"engines": {
+		"node": ">=18.0.0"
 	}
 }

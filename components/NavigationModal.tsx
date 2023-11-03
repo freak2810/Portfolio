@@ -1,5 +1,8 @@
+// @ts-nocheck
+
 import Modal from 'react-modal';
 import Link from 'next/link';
+// @ts-expect-error - no types
 import { Times } from '@styled-icons/fa-solid';
 import { useNavigationContext } from '../context/NavigationContext';
 
@@ -7,15 +10,14 @@ const StyledLink = ({ address, title }: { address: string; title: string }) => {
 	const { closeModal } = useNavigationContext();
 
 	return (
-        (<Link
-            href={address}
-            onClick={closeModal}
-            className='p-1 my-2 text-2xl font-semibold transition-all duration-300 rounded-lg hover:bg-splash hover:text-background'>
-
-            {title}
-
-        </Link>)
-    );
+		<Link
+			href={address}
+			onClick={closeModal}
+			className='p-1 my-2 text-2xl font-semibold transition-all duration-300 rounded-lg hover:bg-splash hover:text-background'
+		>
+			{title}
+		</Link>
+	);
 };
 
 export default function NavigationModal() {
@@ -27,10 +29,12 @@ export default function NavigationModal() {
 			shouldCloseOnEsc
 			onRequestClose={closeModal}
 			className='w-screen h-screen bg-background'
-			contentLabel='Mobile navigation Modal'>
+			contentLabel='Mobile navigation Modal'
+		>
 			<div
 				onClick={closeModal}
-				className='relative z-20 flex flex-col items-center justify-center h-screen bg-background'>
+				className='relative z-20 flex flex-col items-center justify-center h-screen bg-background'
+			>
 				<button onClick={closeModal} className='absolute top-2 right-2'>
 					<Times
 						className='transition-all duration-300 hover:text-splash'

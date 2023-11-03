@@ -417,12 +417,62 @@ export type LinkSorting = {
   username?: InputMaybe<SortOrder>;
 };
 
+export type ProjectsPage = Document & {
+  __typename?: 'ProjectsPage';
+  /** Date the document was created */
+  _createdAt?: Maybe<Scalars['DateTime']['output']>;
+  /** Document ID */
+  _id?: Maybe<Scalars['ID']['output']>;
+  _key?: Maybe<Scalars['String']['output']>;
+  /** Current document revision */
+  _rev?: Maybe<Scalars['String']['output']>;
+  /** Document type */
+  _type?: Maybe<Scalars['String']['output']>;
+  /** Date the document was last modified */
+  _updatedAt?: Maybe<Scalars['DateTime']['output']>;
+  cover?: Maybe<Image>;
+  deploymentLink?: Maybe<Scalars['String']['output']>;
+  descriptionRaw?: Maybe<Scalars['JSON']['output']>;
+  githubLink?: Maybe<Scalars['String']['output']>;
+  name?: Maybe<Scalars['String']['output']>;
+  stack?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+};
+
+export type ProjectsPageFilter = {
+  /** Apply filters on document level */
+  _?: InputMaybe<Sanity_DocumentFilter>;
+  _createdAt?: InputMaybe<DatetimeFilter>;
+  _id?: InputMaybe<IdFilter>;
+  _key?: InputMaybe<StringFilter>;
+  _rev?: InputMaybe<StringFilter>;
+  _type?: InputMaybe<StringFilter>;
+  _updatedAt?: InputMaybe<DatetimeFilter>;
+  cover?: InputMaybe<ImageFilter>;
+  deploymentLink?: InputMaybe<StringFilter>;
+  githubLink?: InputMaybe<StringFilter>;
+  name?: InputMaybe<StringFilter>;
+};
+
+export type ProjectsPageSorting = {
+  _createdAt?: InputMaybe<SortOrder>;
+  _id?: InputMaybe<SortOrder>;
+  _key?: InputMaybe<SortOrder>;
+  _rev?: InputMaybe<SortOrder>;
+  _type?: InputMaybe<SortOrder>;
+  _updatedAt?: InputMaybe<SortOrder>;
+  cover?: InputMaybe<ImageSorting>;
+  deploymentLink?: InputMaybe<SortOrder>;
+  githubLink?: InputMaybe<SortOrder>;
+  name?: InputMaybe<SortOrder>;
+};
+
 export type RootQuery = {
   __typename?: 'RootQuery';
   Document?: Maybe<Document>;
   EducationPage?: Maybe<EducationPage>;
   ExperiencePage?: Maybe<ExperiencePage>;
   LandingPage?: Maybe<LandingPage>;
+  ProjectsPage?: Maybe<ProjectsPage>;
   SanityFileAsset?: Maybe<SanityFileAsset>;
   SanityImageAsset?: Maybe<SanityImageAsset>;
   TechnologyPage?: Maybe<TechnologyPage>;
@@ -430,6 +480,7 @@ export type RootQuery = {
   allEducationPage: Array<EducationPage>;
   allExperiencePage: Array<ExperiencePage>;
   allLandingPage: Array<LandingPage>;
+  allProjectsPage: Array<ProjectsPage>;
   allSanityFileAsset: Array<SanityFileAsset>;
   allSanityImageAsset: Array<SanityImageAsset>;
   allTechnologyPage: Array<TechnologyPage>;
@@ -452,6 +503,11 @@ export type RootQueryExperiencePageArgs = {
 
 
 export type RootQueryLandingPageArgs = {
+  id: Scalars['ID']['input'];
+};
+
+
+export type RootQueryProjectsPageArgs = {
   id: Scalars['ID']['input'];
 };
 
@@ -500,6 +556,14 @@ export type RootQueryAllLandingPageArgs = {
   offset?: InputMaybe<Scalars['Int']['input']>;
   sort?: InputMaybe<Array<LandingPageSorting>>;
   where?: InputMaybe<LandingPageFilter>;
+};
+
+
+export type RootQueryAllProjectsPageArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  sort?: InputMaybe<Array<ProjectsPageSorting>>;
+  where?: InputMaybe<ProjectsPageFilter>;
 };
 
 
@@ -999,6 +1063,11 @@ export type HomePageQueryVariables = Exact<{
 
 export type HomePageQuery = { __typename?: 'RootQuery', LandingPage?: { __typename?: 'LandingPage', _id?: string | null, roles?: Array<string | null> | null, name?: string | null, bioRaw?: any | null, socialLinks?: Array<{ __typename?: 'Link', username?: string | null, profileLink?: string | null, socialProfile?: string | null } | null> | null, profilePicture?: { __typename?: 'Image', asset?: { __typename?: 'SanityImageAsset', url?: string | null } | null } | null } | null };
 
+export type ProjectsPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type ProjectsPageQuery = { __typename?: 'RootQuery', allProjectsPage: Array<{ __typename?: 'ProjectsPage', _id?: string | null, name?: string | null, githubLink?: string | null, deploymentLink?: string | null, stack?: Array<string | null> | null, descriptionRaw?: any | null, cover?: { __typename?: 'Image', asset?: { __typename?: 'SanityImageAsset', url?: string | null } | null } | null }> };
+
 export type TechnologyPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -1049,6 +1118,23 @@ export const HomePageDocument = gql`
   }
 }
     `;
+export const ProjectsPageDocument = gql`
+    query ProjectsPage {
+  allProjectsPage {
+    _id
+    name
+    githubLink
+    deploymentLink
+    stack
+    descriptionRaw
+    cover {
+      asset {
+        url
+      }
+    }
+  }
+}
+    `;
 export const TechnologyPageDocument = gql`
     query TechnologyPage {
   allTechnologyPage {
@@ -1071,6 +1157,9 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
     },
     HomePage(variables: HomePageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<HomePageQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<HomePageQuery>(HomePageDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'HomePage', 'query');
+    },
+    ProjectsPage(variables?: ProjectsPageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<ProjectsPageQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<ProjectsPageQuery>(ProjectsPageDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'ProjectsPage', 'query');
     },
     TechnologyPage(variables?: TechnologyPageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<TechnologyPageQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<TechnologyPageQuery>(TechnologyPageDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'TechnologyPage', 'query');

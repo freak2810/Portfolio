@@ -1,9 +1,3 @@
-'use client';
-
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
-import 'tippy.js/animations/shift-away-subtle.css';
-
 import Icon, { IconProps } from './Icon';
 import styles from '../styles/tooltip.module.scss';
 

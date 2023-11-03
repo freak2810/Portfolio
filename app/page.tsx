@@ -16,10 +16,10 @@ const Page = async () => {
 				roles={data?.roles || []}
 				socialLinks={data?.socialLinks}
 			/>
-			{/* <About
+			<About
 				about={data?.bioRaw}
 				image={data?.profilePicture?.asset?.url || ''}
-			/> */}
+			/>
 		</>
 	);
 };

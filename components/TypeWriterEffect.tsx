@@ -1,4 +1,4 @@
-import { Maybe } from 'graphql/jsutils/Maybe';
+import { Maybe } from '../graphql/__generated__';
 import styles from '../styles/type-writer.module.scss';
 
 interface Roles {

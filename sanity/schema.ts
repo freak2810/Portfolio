@@ -4,6 +4,7 @@ import blockContent from './schemas/blockContent';
 import technology from './schemas/technology';
 import experience from './schemas/experience';
 import education from './schemas/education';
+import project from './schemas/project';
 import landingPage from './schemas/landing-page';
 import socialLink from './schemas/social-links';
 
@@ -14,6 +15,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
 		socialLink,
 		education,
 		experience,
+		project,
 		technology,
 	],
 };
