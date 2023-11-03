@@ -23,7 +23,7 @@ const Page = async () => {
 								{p.cover?.asset?.url ? (
 									<div className='relative w-full h-80'>
 										<Image
-											objectFit='cover'
+											className='object-cover'
 											fill
 											src={p.cover.asset.url}
 											alt={p.name || ''}
