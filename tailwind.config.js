@@ -15,7 +15,11 @@ module.exports = {
 			background: '#f9f7f7',
 			splash: '#E84855',
 		},
-		extend: {},
+		extend: {
+			height: {
+				'screen-with-header': 'calc(100vh - 42px)',
+			},
+		},
 	},
 	variants: {
 		extend: {},
