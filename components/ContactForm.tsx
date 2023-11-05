@@ -1,22 +1,20 @@
 'use client';
 
+import { FormEventHandler } from 'react';
 import { sendEmail } from '../app/contact/action';
 
 export default function ContactForm() {
-	// if (isSubmitted) return 'Message Sent🤩';
-	// if (submissionFailed) return 'Failed😓. Try again';
-	// if (isSending) return 'Sending Message😋';
-
 	return (
 		<form
 			action={sendEmail}
-			className='max-w-sm mx-auto lg:max-w-none flex flex-col items-center px-4 my-2 lg:px-8 lg:py-4 border rounded-lg border-[#E84855]'
+			method='POST'
+			className='flex flex-col items-center max-w-sm px-4 mx-auto my-2 border rounded-lg lg:max-w-none lg:px-8 lg:py-4 border-10 border-splash'
 		>
 			<h1 className='hidden my-2 text-3xl text-background lg:inline'>
 				Drop a message
 			</h1>
 			<div className='flex flex-col w-full my-4 text-background lg:w-96'>
-				<label htmlFor='name' className='my-1 text-[#E84855]'>
+				<label htmlFor='name' className='my-1 text-splash'>
 					Name
 				</label>
 				<input
@@ -30,7 +28,7 @@ export default function ContactForm() {
 				/>
 			</div>
 			<div className='flex flex-col w-full my-4 text-background lg:w-96'>
-				<label htmlFor='email' className='my-1 text-[#E84855]'>
+				<label htmlFor='email' className='my-1 text-splash'>
 					Email
 				</label>
 				<input
@@ -42,7 +40,7 @@ export default function ContactForm() {
 				/>
 			</div>
 			<div className='flex flex-col w-full my-4 text-background lg:w-96'>
-				<label htmlFor='email' className='my-1 text-[#E84855]'>
+				<label htmlFor='email' className='my-1 text-splash'>
 					Message
 				</label>
 				<textarea
