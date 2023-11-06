@@ -8,7 +8,7 @@ const Page = () => {
 				<span>{"I'm"}</span>
 				<span className='underline'>Aditya</span>
 			</h1>
-			<div className='absolute right-0 w-2/5 translate-x-32 translate-y-16 h-4/5'>
+			<div className='absolute right-0 w-3/5 translate-x-64 translate-y-16 h-4/5'>
 				<Image
 					loading='eager'
 					alt='Aditya Manikanth Rao'

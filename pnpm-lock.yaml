@@ -23,6 +23,9 @@ dependencies:
   '@styled-icons/material-twotone':
     specifier: ^10.7.0
     version: 10.47.0(react@18.2.0)(styled-components@5.3.11)
+  framer-motion:
+    specifier: ^10.16.4
+    version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
   graphql-request:
     specifier: ^6.1.0
     version: 6.1.0(graphql@16.8.1)

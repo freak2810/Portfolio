@@ -13,7 +13,7 @@ const Layout = (props: { children: ReactNode }) => {
 	return (
 		<html className={`${poppins.className} w-screen`} lang='en'>
 			<body className='flex flex-row'>
-				<div className='w-2/3 px-16 bg-red-100'>
+				<div className='w-2/3 px-32 bg-red-100'>
 					<section className='max-w-5xl'>{props.children}</section>
 				</div>
 				<Menu />
