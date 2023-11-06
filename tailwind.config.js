@@ -6,23 +6,11 @@ module.exports = {
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		fontFamily: {
-			title: ['Sacramento', 'cursive'],
-			// title: ['WindSong', 'cursive'],
-		},
-		colors: {
-			text: '#112d4e',
-			background: '#f9f7f7',
-			splash: '#E84855',
-		},
 		extend: {
-			height: {
-				'screen-with-header': 'calc(100vh - 42px)',
+			fontFamily: {
+				sans: ['var(--font-poppins)'],
 			},
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [],
 };
