@@ -38,11 +38,26 @@ const StyledLink = ({ address, title }: { address: string; title: string }) => {
 
 export const webView = (
 	<ul className='items-center justify-between hidden lg:flex'>
-		<StyledLink title='Home' address='/' />
-		<StyledLink title='Education & Experience' address='/education' />
-		<StyledLink title='Technologies & Skills' address='/technologies' />
-		<StyledLink title='Projects' address='/projects' />
-		<StyledLink title='Contact Me' address='/contact' />
+		<StyledLink
+			title='Home'
+			address='/'
+		/>
+		<StyledLink
+			title='Education & Experience'
+			address='/education'
+		/>
+		<StyledLink
+			title='Technologies & Skills'
+			address='/technologies'
+		/>
+		<StyledLink
+			title='Projects'
+			address='/projects'
+		/>
+		<StyledLink
+			title='Contact Me'
+			address='/contact'
+		/>
 	</ul>
 );
 

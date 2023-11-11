@@ -1,6 +1,5 @@
 module.exports = {
 	images: {
-		domains: ['cdn.sanity.io'],
 		remotePatterns: [
 			{
 				protocol: 'https',
@@ -9,5 +8,19 @@ module.exports = {
 				pathname: '/images/cc2avtfw/production/**',
 			},
 		],
+	},
+	async redirects() {
+		return [
+			{
+				source: '/about',
+				destination: '/',
+				permanent: true,
+			},
+			{
+				source: '/experience',
+				destination: '/education',
+				permanent: true,
+			},
+		];
 	},
 };

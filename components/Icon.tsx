@@ -31,6 +31,10 @@ import {
 	SiNodedotjs,
 	SiExpress,
 	SiGraphql,
+	SiSolidity,
+	SiEthereum,
+	SiServerless,
+	SiAwslambda,
 } from '@icons-pack/react-simple-icons';
 
 import IconType from '../types/Icons';
@@ -106,7 +110,11 @@ export default function Icon({ name, color, size }: IconProps) {
 		);
 	else if (name === 'C')
 		return (
-			<SiC height={DIMENSION} width={DIMENSION} color={color || '#A8B9CC'} />
+			<SiC
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#A8B9CC'}
+			/>
 		);
 	else if (name === 'C++')
 		return (
@@ -137,11 +145,19 @@ export default function Icon({ name, color, size }: IconProps) {
 		);
 	else if (name === 'CSS')
 		return (
-			<SiCss3 height={DIMENSION} width={DIMENSION} color={color || '#1572B6'} />
+			<SiCss3
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#1572B6'}
+			/>
 		);
 	else if (name === 'SASS')
 		return (
-			<SiSass height={DIMENSION} width={DIMENSION} color={color || '#CC6699'} />
+			<SiSass
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#CC6699'}
+			/>
 		);
 	else if (name === 'React')
 		return (
@@ -185,7 +201,11 @@ export default function Icon({ name, color, size }: IconProps) {
 		);
 	else if (name === 'Expo')
 		return (
-			<SiExpo height={DIMENSION} width={DIMENSION} color={color || '#000020'} />
+			<SiExpo
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#000020'}
+			/>
 		);
 	//
 	// UI Libraries
@@ -289,7 +309,11 @@ export default function Icon({ name, color, size }: IconProps) {
 	//
 	else if (name === 'Git')
 		return (
-			<SiGit height={DIMENSION} width={DIMENSION} color={color || '#F05032'} />
+			<SiGit
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#F05032'}
+			/>
 		);
 	else if (name === 'Docker')
 		return (
@@ -297,6 +321,38 @@ export default function Icon({ name, color, size }: IconProps) {
 				height={DIMENSION}
 				width={DIMENSION}
 				color={color || '#2496ED'}
+			/>
+		);
+	else if (name === 'Solidity')
+		return (
+			<SiSolidity
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#363636'}
+			/>
+		);
+	else if (name === 'Ethereum')
+		return (
+			<SiEthereum
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#3C3C3D'}
+			/>
+		);
+	else if (name === 'Serverless')
+		return (
+			<SiServerless
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#FD5750'}
+			/>
+		);
+	else if (name === 'AWS Lambda')
+		return (
+			<SiAwslambda
+				height={DIMENSION}
+				width={DIMENSION}
+				color={color || '#232F3E'}
 			/>
 		);
 	else return <div />;

@@ -202,6 +202,7 @@ export type ExperiencePage = Document & {
   /** Date the document was last modified */
   _updatedAt?: Maybe<Scalars['DateTime']['output']>;
   company?: Maybe<Scalars['String']['output']>;
+  id?: Maybe<Scalars['Float']['output']>;
   period?: Maybe<Scalars['String']['output']>;
   responsibilitiesRaw?: Maybe<Scalars['JSON']['output']>;
   role?: Maybe<Scalars['String']['output']>;
@@ -218,6 +219,7 @@ export type ExperiencePageFilter = {
   _type?: InputMaybe<StringFilter>;
   _updatedAt?: InputMaybe<DatetimeFilter>;
   company?: InputMaybe<StringFilter>;
+  id?: InputMaybe<FloatFilter>;
   period?: InputMaybe<StringFilter>;
   role?: InputMaybe<StringFilter>;
   type?: InputMaybe<StringFilter>;
@@ -231,6 +233,7 @@ export type ExperiencePageSorting = {
   _type?: InputMaybe<SortOrder>;
   _updatedAt?: InputMaybe<SortOrder>;
   company?: InputMaybe<SortOrder>;
+  id?: InputMaybe<SortOrder>;
   period?: InputMaybe<SortOrder>;
   role?: InputMaybe<SortOrder>;
   type?: InputMaybe<SortOrder>;
@@ -1025,6 +1028,7 @@ export type TechnologyPage = Document & {
   _type?: Maybe<Scalars['String']['output']>;
   /** Date the document was last modified */
   _updatedAt?: Maybe<Scalars['DateTime']['output']>;
+  id?: Maybe<Scalars['Float']['output']>;
   technologies?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   type?: Maybe<Scalars['String']['output']>;
 };
@@ -1038,6 +1042,7 @@ export type TechnologyPageFilter = {
   _rev?: InputMaybe<StringFilter>;
   _type?: InputMaybe<StringFilter>;
   _updatedAt?: InputMaybe<DatetimeFilter>;
+  id?: InputMaybe<FloatFilter>;
   type?: InputMaybe<StringFilter>;
 };
 
@@ -1048,13 +1053,14 @@ export type TechnologyPageSorting = {
   _rev?: InputMaybe<SortOrder>;
   _type?: InputMaybe<SortOrder>;
   _updatedAt?: InputMaybe<SortOrder>;
+  id?: InputMaybe<SortOrder>;
   type?: InputMaybe<SortOrder>;
 };
 
 export type EducationPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type EducationPageQuery = { __typename?: 'RootQuery', allEducationPage: Array<{ __typename: 'EducationPage', _id?: string | null, scores?: string | null, location?: string | null, achievements?: Array<string | null> | null, course?: string | null, institute?: string | null, affiliation?: string | null, period?: string | null }>, allExperiencePage: Array<{ __typename: 'ExperiencePage', _id?: string | null, responsibilitiesRaw?: any | null, company?: string | null, role?: string | null, type?: string | null, period?: string | null }> };
+export type EducationPageQuery = { __typename?: 'RootQuery', allEducationPage: Array<{ __typename: 'EducationPage', _id?: string | null, scores?: string | null, location?: string | null, achievements?: Array<string | null> | null, course?: string | null, institute?: string | null, affiliation?: string | null, period?: string | null }>, allExperiencePage: Array<{ __typename: 'ExperiencePage', id?: number | null, responsibilitiesRaw?: any | null, company?: string | null, role?: string | null, type?: string | null, period?: string | null }> };
 
 export type HomePageQueryVariables = Exact<{
   landingPage: Scalars['ID']['input'];
@@ -1071,7 +1077,7 @@ export type ProjectsPageQuery = { __typename?: 'RootQuery', allProjectsPage: Arr
 export type TechnologyPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type TechnologyPageQuery = { __typename?: 'RootQuery', allTechnologyPage: Array<{ __typename?: 'TechnologyPage', _id?: string | null, type?: string | null, technologies?: Array<string | null> | null }> };
+export type TechnologyPageQuery = { __typename?: 'RootQuery', allTechnologyPage: Array<{ __typename?: 'TechnologyPage', id?: number | null, type?: string | null, technologies?: Array<string | null> | null }> };
 
 
 export const EducationPageDocument = gql`
@@ -1088,7 +1094,7 @@ export const EducationPageDocument = gql`
     period
   }
   allExperiencePage {
-    _id
+    id
     responsibilitiesRaw
     __typename
     company
@@ -1138,7 +1144,7 @@ export const ProjectsPageDocument = gql`
 export const TechnologyPageDocument = gql`
     query TechnologyPage {
   allTechnologyPage {
-    _id
+    id
     type
     technologies
   }

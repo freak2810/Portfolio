@@ -14,7 +14,7 @@ const GET_EDUCATION_PAGE_PROPS = gql`
 			period
 		}
 		allExperiencePage {
-			_id
+			id
 			responsibilitiesRaw
 			__typename
 			company

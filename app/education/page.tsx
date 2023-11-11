@@ -16,7 +16,10 @@ const Education = async () => {
 			</h1>
 			<div className='flex flex-col items-center my-4 mb-16'>
 				{companies.map(c => (
-					<div className='w-full my-4 lg:w-8/12' key={c._id}>
+					<div
+						className='w-full my-4 lg:w-8/12'
+						key={c.id}
+					>
 						<h1 className='my-2 text-4xl font-semibold'>{c.role}</h1>
 						<h2 className='mt-2 text-2xl font-semibold'>{c.company}</h2>
 						<h4 className='font-semibold'>{c.type}</h4>
@@ -39,7 +42,10 @@ const Education = async () => {
 			</h1>
 			<div className='flex flex-col items-center my-4'>
 				{institutes.map(i => (
-					<div className='w-full my-4 lg:w-8/12' key={i._id}>
+					<div
+						className='w-full my-4 lg:w-8/12'
+						key={i._id}
+					>
 						<h1 className='my-2 text-4xl font-semibold'>{i.course}</h1>
 						<h2 className='mt-2 text-2xl font-semibold'>
 							{i.institute}
@@ -50,7 +56,10 @@ const Education = async () => {
 						<h4 className='font-semibold'>{i.scores}</h4>
 						{i.achievements &&
 							i.achievements.map((a, index) => (
-								<ul className='ml-5 list-disc' key={index}>
+								<ul
+									className='ml-5 list-disc'
+									key={index}
+								>
 									<li>
 										<p className='mt-2 md'>{a}</p>
 									</li>
@@ -68,8 +77,12 @@ export default Education;
 const getData = async () => {
 	const data = await sdk.EducationPage();
 
+	console.log(data.allExperiencePage);
+
 	return {
 		institutes: data.allEducationPage,
-		companies: data.allExperiencePage,
+		companies: data.allExperiencePage.sort((a, b) => {
+			return (a.id || 0) > (b.id || 0) ? 1 : -1;
+		}),
 	};
 };

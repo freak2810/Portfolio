@@ -16,14 +16,25 @@ const Technologies = async () => {
 				</h1>
 				<main className='grid grid-cols-1 lg:grid-cols-2'>
 					{data.map((stack, index) => (
-						<article key={index} className='mx-2 my-4'>
+						<article
+							key={index}
+							className='mx-2 my-4'
+						>
 							<h1 className='text-2xl font-medium text-center md:text-3xl'>
 								{stack.type}
 							</h1>
 							<div className='flex flex-wrap justify-center my-5'>
 								{stack.technologies?.map(t => (
-									<div className='mx-4 mb-5 lg:mx-7' key={t}>
-										{<TechnologyIcon size={50} name={t as Icon} />}
+									<div
+										className='mx-4 mb-5 lg:mx-7'
+										key={t}
+									>
+										{
+											<TechnologyIcon
+												size={50}
+												name={t as Icon}
+											/>
+										}
 									</div>
 								))}
 							</div>
@@ -40,5 +51,7 @@ export default Technologies;
 const getPageData = async () => {
 	const data = await sdk.TechnologyPage();
 
-	return data.allTechnologyPage;
+	return data.allTechnologyPage.sort((a, b) =>
+		(a.id || 0) > (b.id || 0) ? 1 : -1
+	);
 };

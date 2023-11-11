@@ -12,7 +12,10 @@ export default function ContactHeader() {
 	return (
 		<header className='absolute top-0 w-full bg-background'>
 			<nav className='container flex items-center justify-between px-4 mx-auto'>
-				<Link href='/' className='py-1 text-2xl font-medium lg:py-0 font-title'>
+				<Link
+					href='/'
+					className='py-1 text-2xl font-medium lg:py-0 font-title'
+				>
 					{`Aditya Manikanth Rao`}
 				</Link>
 				<menu className='w-auto'>{webView}</menu>
