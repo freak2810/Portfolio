@@ -1,22 +1,8 @@
 'use server';
 
-// import {
-// 	SESClient,
-// 	SendEmailCommand,
-// 	SendEmailCommandInput,
-// } from '@aws-sdk/client-ses';
-
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-
-// const ses = new SESClient({
-// 	region: 'us-east-1',
-// 	credentials: {
-// 		accessKeyId: process.env.AWS_SES_ACCESS_KEY || '',
-// 		secretAccessKey: process.env.AWS_SES_SECRET_KEY || '',
-// 	},
-// });
 
 const EMAIL = 'adityamanikanthrao@gmail.com';
 
