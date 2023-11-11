@@ -77,8 +77,6 @@ export default Education;
 const getData = async () => {
 	const data = await sdk.EducationPage();
 
-	console.log(data.allExperiencePage);
-
 	return {
 		institutes: data.allEducationPage,
 		companies: data.allExperiencePage.sort((a, b) => {
