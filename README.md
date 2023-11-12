@@ -4,20 +4,20 @@ A Minimal Design Portfolio.
 
 ## Getting Started
 
-Make sure that you have [Node](https://nodejs.org) installed in your system before you start the application.
+Make sure that you have [Node](https://nodejs.org) and [PNPM](https://pnpm.io) installed in your system before you start the application.
 
 ### Installing
 
 Run the following command
 
 ```
-yarn install
+pnpm install
 ```
 
 And after the dependencies are installed
 
 ```
-yarn dev
+pnpm dev
 ```
 
 ## Built With
@@ -25,9 +25,9 @@ yarn dev
 - [TypeScript](https://www.typescriptlang.org/) - Programming Language
 - [React/ NextJS](https://nextjs.org/docs) - Framework Used
 - [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
-- [SASS](https://sass-lang.com/documentation) - Styling
-- [Apollo GraphQL](https://www.apollographql.com/docs/) - Queries
-- [Graph CMS](https://graphcms.com/) - Headless CMS
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Styling
+- [GraphQL Request + Code generation](https://www.apollographql.com/docs/) - Queries
+- [Sanity CMS](https://www.sanity.io) - Headless CMS
 - [Simple Icons](https://simpleicons.org/) - Social & Technology Icons
 
 ## Authors
@@ -42,4 +42,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Hat tip to anyone & everyone whose code and icons was used.
 
-- Feel Free to use this code but just dont forget to star and give me the credit 😁🐣.
+- Feel Free to use this code but just don't forget to star and give me some credit 😁🐣.
